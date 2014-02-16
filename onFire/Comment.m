@@ -10,4 +10,9 @@
 
 @implementation Comment
 
+@synthesize commentId;
+@synthesize message;
+@synthesize date;
+@synthesize member;
+
 @end

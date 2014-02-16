@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Notification.h"
 
 @interface User : NSObject
 
@@ -15,5 +16,6 @@
 @property (nonatomic, strong) NSString* lastName;
 @property (nonatomic, strong) NSString* email;
 @property (nonatomic, strong) NSString* password;
+@property (nonatomic, strong) NSMutableArray* notifications; // content of the array will be `Notification` class type
 
 @end

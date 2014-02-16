@@ -10,4 +10,7 @@
 
 @implementation Notification
 
+@synthesize notificationId;
+@synthesize message;
+
 @end

@@ -10,4 +10,7 @@
 
 @interface Video : NSObject
 
+@property (nonatomic, assign) int videoId;
+@property (nonatomic, assign) int flag;
+
 @end

@@ -11,5 +11,10 @@
 @implementation Member
 
 @synthesize flag;
+@synthesize currentLoc;
+@synthesize photo;
+@synthesize favoritePlaces;
+@synthesize friends;
+@synthesize fires;
 
 @end

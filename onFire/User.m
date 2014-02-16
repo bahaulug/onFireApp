@@ -15,5 +15,6 @@
 @synthesize lastName;
 @synthesize email;
 @synthesize password;
+@synthesize notifications;
 
 @end

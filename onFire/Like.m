@@ -10,4 +10,8 @@
 
 @implementation Like
 
+@synthesize likeId;
+@synthesize date;
+@synthesize member;
+
 @end

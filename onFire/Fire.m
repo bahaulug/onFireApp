@@ -13,5 +13,11 @@
 @synthesize fireId;
 @synthesize date;
 @synthesize description;
+@synthesize video;
+@synthesize location;
+@synthesize member;
+@synthesize likes;
+@synthesize comments;
+@synthesize place;
 
 @end

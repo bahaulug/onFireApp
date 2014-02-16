@@ -7,7 +7,21 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Video.h"
+#import "Photo.h"
+#import "Fire.h"
+#import "Location.h"
 
 @interface Place : NSObject
+
+@property (nonatomic, strong) NSString* placeId;
+@property (nonatomic, strong) NSString* name;
+@property (nonatomic, strong) NSString* description;
+@property (nonatomic, assign) int likeCount;
+@property (nonatomic, assign) int dislikeCount;
+@property (nonatomic, strong) Photo* photo;
+@property (nonatomic, strong) Video* video;
+@property (nonatomic, strong) Location* location;
+@property (nonatomic, strong) NSMutableArray* fires; // content of the array will be `Fire` class type
 
 @end

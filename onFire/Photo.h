@@ -10,4 +10,7 @@
 
 @interface Photo : NSObject
 
+@property (nonatomic, assign) int photoId;
+@property (nonatomic, assign) int flag;
+
 @end

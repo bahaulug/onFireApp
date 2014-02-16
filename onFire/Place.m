@@ -10,4 +10,14 @@
 
 @implementation Place
 
+@synthesize placeId;
+@synthesize name;
+@synthesize description;
+@synthesize likeCount;
+@synthesize dislikeCount;
+@synthesize photo;
+@synthesize video;
+@synthesize  location;
+@synthesize fires;
+
 @end

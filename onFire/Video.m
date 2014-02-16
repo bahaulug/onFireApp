@@ -10,4 +10,7 @@
 
 @implementation Video
 
+@synthesize videoId;
+@synthesize flag;
+
 @end

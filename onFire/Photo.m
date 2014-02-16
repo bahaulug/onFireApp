@@ -10,4 +10,7 @@
 
 @implementation Photo
 
+@synthesize photoId;
+@synthesize flag;
+
 @end

@@ -10,4 +10,7 @@
 
 @interface Notification : NSObject
 
+@property (nonatomic, assign) int notificationId;
+@property (nonatomic, strong) NSString* message;
+
 @end
