@@ -10,4 +10,7 @@
 
 @implementation ApprovedFriendNotification
 
+@synthesize notificationId;
+@synthesize message;
+
 @end

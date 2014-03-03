@@ -10,13 +10,71 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "onFire/User.h"
-            timestampString = "411577516.348773"
+            timestampString = "415471443.244484"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "15"
-            endingLineNumber = "15"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
             landmarkName = "firstName"
             landmarkType = "19">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[User firstName]"
+                  moduleName = "onFire"
+                  urlString = "file:///Users/berkin/Desktop/XCode/onFire/onFire/User.h"
+                  timestampString = "415577425.847953"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[Member firstName]"
+                  moduleName = "onFire"
+                  urlString = "file:///Users/berkin/Desktop/XCode/onFire/onFire/User.h"
+                  timestampString = "415577425.848229"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[Admin firstName]"
+                  moduleName = "onFire"
+                  urlString = "file:///Users/berkin/Desktop/XCode/onFire/onFire/User.h"
+                  timestampString = "415577425.848416"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[Owner firstName]"
+                  moduleName = "onFire"
+                  urlString = "file:///Users/berkin/Desktop/XCode/onFire/onFire/User.h"
+                  timestampString = "415577425.848608"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

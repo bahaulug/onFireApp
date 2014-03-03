@@ -7,12 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Member.h"
+//#import "Member.h"
+@class Member;
 
 @interface Like : NSObject
 
 @property (nonatomic, assign) int likeId;
 @property (nonatomic, strong) Member* member; // member who liked
 @property (nonatomic, strong) NSDate* date;
+
+- (id)initWithMember:(Member*)member;
 
 @end

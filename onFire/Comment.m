@@ -7,6 +7,7 @@
 //
 
 #import "Comment.h"
+#import "Member.h"
 
 @implementation Comment
 

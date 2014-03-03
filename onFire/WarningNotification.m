@@ -10,4 +10,7 @@
 
 @implementation WarningNotification
 
+@synthesize notificationId;
+@synthesize message;
+
 @end

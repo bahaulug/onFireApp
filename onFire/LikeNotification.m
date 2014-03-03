@@ -10,4 +10,7 @@
 
 @implementation LikeNotification
 
+@synthesize notificationId;
+@synthesize message;
+
 @end

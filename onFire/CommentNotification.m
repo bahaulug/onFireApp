@@ -10,4 +10,7 @@
 
 @implementation CommentNotification
 
+@synthesize notificationId;
+@synthesize message;
+
 @end

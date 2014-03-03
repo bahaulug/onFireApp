@@ -7,9 +7,23 @@
 //
 
 #import "Admin.h"
+#import "Owner.h"
+#import "Place.h"
+#import "Member.h"
+#import "Fire.h"
 
 @implementation Admin
 
 @synthesize approveList;
+@synthesize userId;
+@synthesize firstName;
+@synthesize lastName;
+@synthesize email;
+@synthesize password;
+@synthesize gender;
+@synthesize birthDay;
+@synthesize birthMonth;
+@synthesize birthYear;
+@synthesize notifications;
 
 @end

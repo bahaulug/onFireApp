@@ -7,9 +7,12 @@
 //
 
 #import "User.h"
-#import "Place.h"
-#import "Video.h"
-#import "Photo.h"
+//#import "Place.h"
+//#import "Video.h"
+//#import "Photo.h"
+@class Place;
+@class Video;
+@class Photo;
 
 @interface Owner : User
 

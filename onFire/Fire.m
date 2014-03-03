@@ -7,6 +7,12 @@
 //
 
 #import "Fire.h"
+#import "Member.h"
+#import "Video.h"
+#import "Like.h"
+#import "Comment.h"
+#import "Place.h"
+#import "Location.h"
 
 @implementation Fire
 

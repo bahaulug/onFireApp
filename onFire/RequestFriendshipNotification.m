@@ -10,4 +10,7 @@
 
 @implementation RequestFriendshipNotification
 
+@synthesize notificationId;
+@synthesize message;
+
 @end

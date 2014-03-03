@@ -13,4 +13,6 @@
 @property (nonatomic, assign) int notificationId;
 @property (nonatomic, strong) NSString* message;
 
+- (id)initWithMessage:(NSString*)message;
+
 @end

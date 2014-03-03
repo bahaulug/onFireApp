@@ -13,6 +13,7 @@
 @property (nonatomic, assign) int latitude;
 @property (nonatomic, assign) int longitude;
 
+- (id)initWithLatitude:(int)latitude longitude:(int)longitude;
 - (void)getCurrentLocation;
 
 @end

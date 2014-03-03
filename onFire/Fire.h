@@ -32,4 +32,6 @@
 @property (nonatomic, strong) Member* member;
 @property (nonatomic, strong) Place* place;
 
+- (id)initWithMember:(Member*)member place:(Place*)place video:(Video*)video location:(Location*)location date:(NSDate*)date description:(NSString*)description;
+
 @end

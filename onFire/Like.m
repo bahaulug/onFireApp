@@ -7,6 +7,7 @@
 //
 
 #import "Like.h"
+#import "Member.h"
 
 @implementation Like
 

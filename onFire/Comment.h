@@ -7,7 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Member.h"
+//#import "Member.h"
+@class Member;
 
 @interface Comment : NSObject
 
@@ -15,5 +16,7 @@
 @property (nonatomic, strong) NSString* message;
 @property (nonatomic, strong) NSDate* date;
 @property (nonatomic, strong) Member* member; // member who commented
+
+- (id)initWithMember:(Member*)member;
 
 @end

@@ -7,11 +7,14 @@
 //
 
 #import "User.h"
-#import "Owner.h"
-#import "Place.h"
-#import "Member.h"
-#import "Fire.h"
-
+//#import "Owner.h"
+//#import "Place.h"
+//#import "Member.h"
+//#import "Fire.h"
+@class Owner;
+@class Place;
+@class Member;
+@class Fire;
 
 @interface Admin : User
 

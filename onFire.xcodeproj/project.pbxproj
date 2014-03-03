@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		5A5519881888240F00718C48 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A5519871888240F00718C48 /* Foundation.framework */; };
-		5A55198A1888240F00718C48 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A5519891888240F00718C48 /* CoreGraphics.framework */; };
 		5A55198C1888240F00718C48 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A55198B1888240F00718C48 /* UIKit.framework */; };
 		5A5519921888240F00718C48 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5A5519901888240F00718C48 /* InfoPlist.strings */; };
 		5A5519941888240F00718C48 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A5519931888240F00718C48 /* main.m */; };
@@ -40,6 +39,27 @@
 		5A5519ED18882C2600718C48 /* RequestFriendshipNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A5519EC18882C2600718C48 /* RequestFriendshipNotification.m */; };
 		5A5519F018882C3F00718C48 /* ApprovedFriendNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A5519EF18882C3F00718C48 /* ApprovedFriendNotification.m */; };
 		5A5519F318882C4A00718C48 /* WarningNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A5519F218882C4A00718C48 /* WarningNotification.m */; };
+		5AA5AC8718C4FC4800FAF513 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AA5AC8618C4FC4800FAF513 /* AVFoundation.framework */; };
+		5AA5AC8C18C4FEEB00FAF513 /* FlipsideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AA5AC8918C4FEEB00FAF513 /* FlipsideViewController.m */; };
+		5AA5AC8D18C4FEEB00FAF513 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AA5AC8B18C4FEEB00FAF513 /* MainViewController.m */; };
+		5AA5AC9018C50B4900FAF513 /* PlacesLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AA5AC8F18C50B4900FAF513 /* PlacesLoader.m */; };
+		5AA5AC9318C51F7000FAF513 /* PlaceAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AA5AC9218C51F7000FAF513 /* PlaceAnnotation.m */; };
+		5AA5AC9618C5331000FAF513 /* LogInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AA5AC9518C5331000FAF513 /* LogInViewController.m */; };
+		5AA5AC9918C5332000FAF513 /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AA5AC9818C5332000FAF513 /* SignUpViewController.m */; };
+		5AB7FCE618C3986500C79354 /* ParseSignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AB7FCE518C3986500C79354 /* ParseSignUpViewController.m */; };
+		5AB7FCE918C3987500C79354 /* ParseLogInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AB7FCE818C3987500C79354 /* ParseLogInViewController.m */; };
+		5AB7FCEE18C3A08000C79354 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A5519891888240F00718C48 /* CoreGraphics.framework */; };
+		5AB7FCEF18C3A09700C79354 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A5519A91888241000718C48 /* XCTest.framework */; };
+		5AB7FCF618C3A2D200C79354 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AB7FCF518C3A2D200C79354 /* Parse.framework */; };
+		5AB7FCF818C3A2D900C79354 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AB7FCF718C3A2D900C79354 /* AudioToolbox.framework */; };
+		5AB7FCFA18C3A2DD00C79354 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AB7FCF918C3A2DD00C79354 /* CFNetwork.framework */; };
+		5AB7FCFC18C3A2E700C79354 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AB7FCFB18C3A2E700C79354 /* CoreLocation.framework */; };
+		5AB7FCFE18C3A2F700C79354 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AB7FCFD18C3A2F700C79354 /* libz.dylib */; };
+		5AB7FD0418C3A31C00C79354 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AB7FCFF18C3A31C00C79354 /* MobileCoreServices.framework */; };
+		5AB7FD0518C3A31C00C79354 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AB7FD0018C3A31C00C79354 /* QuartzCore.framework */; };
+		5AB7FD0618C3A31C00C79354 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AB7FD0118C3A31C00C79354 /* Security.framework */; };
+		5AB7FD0718C3A31C00C79354 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AB7FD0218C3A31C00C79354 /* StoreKit.framework */; };
+		5AB7FD0818C3A31C00C79354 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AB7FD0318C3A31C00C79354 /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,6 +129,33 @@
 		5A5519EF18882C3F00718C48 /* ApprovedFriendNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApprovedFriendNotification.m; sourceTree = "<group>"; };
 		5A5519F118882C4A00718C48 /* WarningNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WarningNotification.h; sourceTree = "<group>"; };
 		5A5519F218882C4A00718C48 /* WarningNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WarningNotification.m; sourceTree = "<group>"; };
+		5AA5AC8618C4FC4800FAF513 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		5AA5AC8818C4FEEB00FAF513 /* FlipsideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlipsideViewController.h; sourceTree = "<group>"; };
+		5AA5AC8918C4FEEB00FAF513 /* FlipsideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlipsideViewController.m; sourceTree = "<group>"; };
+		5AA5AC8A18C4FEEB00FAF513 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		5AA5AC8B18C4FEEB00FAF513 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		5AA5AC8E18C50B4900FAF513 /* PlacesLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlacesLoader.h; sourceTree = "<group>"; };
+		5AA5AC8F18C50B4900FAF513 /* PlacesLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlacesLoader.m; sourceTree = "<group>"; };
+		5AA5AC9118C51F6F00FAF513 /* PlaceAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaceAnnotation.h; sourceTree = "<group>"; };
+		5AA5AC9218C51F7000FAF513 /* PlaceAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaceAnnotation.m; sourceTree = "<group>"; };
+		5AA5AC9418C5331000FAF513 /* LogInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogInViewController.h; sourceTree = "<group>"; };
+		5AA5AC9518C5331000FAF513 /* LogInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogInViewController.m; sourceTree = "<group>"; };
+		5AA5AC9718C5332000FAF513 /* SignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpViewController.h; sourceTree = "<group>"; };
+		5AA5AC9818C5332000FAF513 /* SignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpViewController.m; sourceTree = "<group>"; };
+		5AB7FCE418C3986500C79354 /* ParseSignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParseSignUpViewController.h; sourceTree = "<group>"; };
+		5AB7FCE518C3986500C79354 /* ParseSignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParseSignUpViewController.m; sourceTree = "<group>"; };
+		5AB7FCE718C3987500C79354 /* ParseLogInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParseLogInViewController.h; sourceTree = "<group>"; };
+		5AB7FCE818C3987500C79354 /* ParseLogInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParseLogInViewController.m; sourceTree = "<group>"; };
+		5AB7FCF518C3A2D200C79354 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		5AB7FCF718C3A2D900C79354 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		5AB7FCF918C3A2DD00C79354 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		5AB7FCFB18C3A2E700C79354 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		5AB7FCFD18C3A2F700C79354 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		5AB7FCFF18C3A31C00C79354 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		5AB7FD0018C3A31C00C79354 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		5AB7FD0118C3A31C00C79354 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		5AB7FD0218C3A31C00C79354 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		5AB7FD0318C3A31C00C79354 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,7 +163,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5A55198A1888240F00718C48 /* CoreGraphics.framework in Frameworks */,
+				5AA5AC8718C4FC4800FAF513 /* AVFoundation.framework in Frameworks */,
+				5AB7FD0418C3A31C00C79354 /* MobileCoreServices.framework in Frameworks */,
+				5AB7FD0518C3A31C00C79354 /* QuartzCore.framework in Frameworks */,
+				5AB7FD0618C3A31C00C79354 /* Security.framework in Frameworks */,
+				5AB7FD0718C3A31C00C79354 /* StoreKit.framework in Frameworks */,
+				5AB7FD0818C3A31C00C79354 /* SystemConfiguration.framework in Frameworks */,
+				5AB7FCFE18C3A2F700C79354 /* libz.dylib in Frameworks */,
+				5AB7FCFC18C3A2E700C79354 /* CoreLocation.framework in Frameworks */,
+				5AB7FCFA18C3A2DD00C79354 /* CFNetwork.framework in Frameworks */,
+				5AB7FCF818C3A2D900C79354 /* AudioToolbox.framework in Frameworks */,
+				5AB7FCF618C3A2D200C79354 /* Parse.framework in Frameworks */,
+				5AB7FCEF18C3A09700C79354 /* XCTest.framework in Frameworks */,
+				5AB7FCEE18C3A08000C79354 /* CoreGraphics.framework in Frameworks */,
 				5A55198C1888240F00718C48 /* UIKit.framework in Frameworks */,
 				5A5519C01888245800718C48 /* MapKit.framework in Frameworks */,
 				5A5519881888240F00718C48 /* Foundation.framework in Frameworks */,
@@ -158,6 +217,17 @@
 		5A5519861888240F00718C48 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5AA5AC8618C4FC4800FAF513 /* AVFoundation.framework */,
+				5AB7FCFF18C3A31C00C79354 /* MobileCoreServices.framework */,
+				5AB7FD0018C3A31C00C79354 /* QuartzCore.framework */,
+				5AB7FD0118C3A31C00C79354 /* Security.framework */,
+				5AB7FD0218C3A31C00C79354 /* StoreKit.framework */,
+				5AB7FD0318C3A31C00C79354 /* SystemConfiguration.framework */,
+				5AB7FCFD18C3A2F700C79354 /* libz.dylib */,
+				5AB7FCFB18C3A2E700C79354 /* CoreLocation.framework */,
+				5AB7FCF918C3A2DD00C79354 /* CFNetwork.framework */,
+				5AB7FCF718C3A2D900C79354 /* AudioToolbox.framework */,
+				5AB7FCF518C3A2D200C79354 /* Parse.framework */,
 				5A5519BF1888245800718C48 /* MapKit.framework */,
 				5A5519871888240F00718C48 /* Foundation.framework */,
 				5A5519891888240F00718C48 /* CoreGraphics.framework */,
@@ -170,49 +240,10 @@
 		5A55198D1888240F00718C48 /* onFire */ = {
 			isa = PBXGroup;
 			children = (
-				5A5519961888240F00718C48 /* AppDelegate.h */,
-				5A5519971888240F00718C48 /* AppDelegate.m */,
-				5A5519991888240F00718C48 /* Main.storyboard */,
-				5A55199C1888240F00718C48 /* FirstViewController.h */,
-				5A55199D1888240F00718C48 /* FirstViewController.m */,
-				5A55199F1888240F00718C48 /* SecondViewController.h */,
-				5A5519A01888240F00718C48 /* SecondViewController.m */,
+				5AB7FCE318C395FB00C79354 /* Model */,
+				5AB7FCE218C395EF00C79354 /* GUI */,
 				5A5519A21888240F00718C48 /* Images.xcassets */,
 				5A55198E1888240F00718C48 /* Supporting Files */,
-				5A5519C1188829FF00718C48 /* User.h */,
-				5A5519C2188829FF00718C48 /* User.m */,
-				5A5519C418882A4600718C48 /* Admin.h */,
-				5A5519C518882A4600718C48 /* Admin.m */,
-				5A5519C718882A7F00718C48 /* Owner.h */,
-				5A5519C818882A7F00718C48 /* Owner.m */,
-				5A5519CA18882AD400718C48 /* Member.h */,
-				5A5519CB18882AD400718C48 /* Member.m */,
-				5A5519CD18882B1400718C48 /* Location.h */,
-				5A5519CE18882B1400718C48 /* Location.m */,
-				5A5519D018882B3100718C48 /* Video.h */,
-				5A5519D118882B3100718C48 /* Video.m */,
-				5A5519D318882B4000718C48 /* Like.h */,
-				5A5519D418882B4000718C48 /* Like.m */,
-				5A5519D618882B6B00718C48 /* Comment.h */,
-				5A5519D718882B6B00718C48 /* Comment.m */,
-				5A5519D918882B7B00718C48 /* Fire.h */,
-				5A5519DA18882B7B00718C48 /* Fire.m */,
-				5A5519DC18882B8400718C48 /* Photo.h */,
-				5A5519DD18882B8400718C48 /* Photo.m */,
-				5A5519DF18882BC400718C48 /* Place.h */,
-				5A5519E018882BC400718C48 /* Place.m */,
-				5A5519E218882BD300718C48 /* Notification.h */,
-				5A5519E318882BD300718C48 /* Notification.m */,
-				5A5519E518882BF200718C48 /* LikeNotification.h */,
-				5A5519E618882BF200718C48 /* LikeNotification.m */,
-				5A5519E818882C0100718C48 /* CommentNotification.h */,
-				5A5519E918882C0100718C48 /* CommentNotification.m */,
-				5A5519EB18882C2600718C48 /* RequestFriendshipNotification.h */,
-				5A5519EC18882C2600718C48 /* RequestFriendshipNotification.m */,
-				5A5519EE18882C3F00718C48 /* ApprovedFriendNotification.h */,
-				5A5519EF18882C3F00718C48 /* ApprovedFriendNotification.m */,
-				5A5519F118882C4A00718C48 /* WarningNotification.h */,
-				5A5519F218882C4A00718C48 /* WarningNotification.m */,
 			);
 			path = onFire;
 			sourceTree = "<group>";
@@ -244,6 +275,77 @@
 				5A5519B21888241000718C48 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5AB7FCE218C395EF00C79354 /* GUI */ = {
+			isa = PBXGroup;
+			children = (
+				5A5519961888240F00718C48 /* AppDelegate.h */,
+				5A5519971888240F00718C48 /* AppDelegate.m */,
+				5A5519991888240F00718C48 /* Main.storyboard */,
+				5AA5AC9418C5331000FAF513 /* LogInViewController.h */,
+				5AA5AC9518C5331000FAF513 /* LogInViewController.m */,
+				5AA5AC9718C5332000FAF513 /* SignUpViewController.h */,
+				5AA5AC9818C5332000FAF513 /* SignUpViewController.m */,
+				5AB7FCE418C3986500C79354 /* ParseSignUpViewController.h */,
+				5AB7FCE518C3986500C79354 /* ParseSignUpViewController.m */,
+				5AB7FCE718C3987500C79354 /* ParseLogInViewController.h */,
+				5AB7FCE818C3987500C79354 /* ParseLogInViewController.m */,
+				5AA5AC8818C4FEEB00FAF513 /* FlipsideViewController.h */,
+				5AA5AC8918C4FEEB00FAF513 /* FlipsideViewController.m */,
+				5AA5AC8A18C4FEEB00FAF513 /* MainViewController.h */,
+				5AA5AC8B18C4FEEB00FAF513 /* MainViewController.m */,
+				5A55199C1888240F00718C48 /* FirstViewController.h */,
+				5A55199D1888240F00718C48 /* FirstViewController.m */,
+				5A55199F1888240F00718C48 /* SecondViewController.h */,
+				5A5519A01888240F00718C48 /* SecondViewController.m */,
+			);
+			name = GUI;
+			sourceTree = "<group>";
+		};
+		5AB7FCE318C395FB00C79354 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5A5519C1188829FF00718C48 /* User.h */,
+				5A5519C2188829FF00718C48 /* User.m */,
+				5A5519C418882A4600718C48 /* Admin.h */,
+				5A5519C518882A4600718C48 /* Admin.m */,
+				5A5519C718882A7F00718C48 /* Owner.h */,
+				5A5519C818882A7F00718C48 /* Owner.m */,
+				5A5519CA18882AD400718C48 /* Member.h */,
+				5A5519CB18882AD400718C48 /* Member.m */,
+				5A5519CD18882B1400718C48 /* Location.h */,
+				5A5519CE18882B1400718C48 /* Location.m */,
+				5A5519D018882B3100718C48 /* Video.h */,
+				5A5519D118882B3100718C48 /* Video.m */,
+				5A5519D318882B4000718C48 /* Like.h */,
+				5A5519D418882B4000718C48 /* Like.m */,
+				5A5519D618882B6B00718C48 /* Comment.h */,
+				5A5519D718882B6B00718C48 /* Comment.m */,
+				5A5519D918882B7B00718C48 /* Fire.h */,
+				5A5519DA18882B7B00718C48 /* Fire.m */,
+				5A5519DC18882B8400718C48 /* Photo.h */,
+				5A5519DD18882B8400718C48 /* Photo.m */,
+				5A5519DF18882BC400718C48 /* Place.h */,
+				5A5519E018882BC400718C48 /* Place.m */,
+				5AA5AC8E18C50B4900FAF513 /* PlacesLoader.h */,
+				5AA5AC8F18C50B4900FAF513 /* PlacesLoader.m */,
+				5AA5AC9118C51F6F00FAF513 /* PlaceAnnotation.h */,
+				5AA5AC9218C51F7000FAF513 /* PlaceAnnotation.m */,
+				5A5519E218882BD300718C48 /* Notification.h */,
+				5A5519E318882BD300718C48 /* Notification.m */,
+				5A5519E518882BF200718C48 /* LikeNotification.h */,
+				5A5519E618882BF200718C48 /* LikeNotification.m */,
+				5A5519E818882C0100718C48 /* CommentNotification.h */,
+				5A5519E918882C0100718C48 /* CommentNotification.m */,
+				5A5519EB18882C2600718C48 /* RequestFriendshipNotification.h */,
+				5A5519EC18882C2600718C48 /* RequestFriendshipNotification.m */,
+				5A5519EE18882C3F00718C48 /* ApprovedFriendNotification.h */,
+				5A5519EF18882C3F00718C48 /* ApprovedFriendNotification.m */,
+				5A5519F118882C4A00718C48 /* WarningNotification.h */,
+				5A5519F218882C4A00718C48 /* WarningNotification.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -351,26 +453,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5AA5AC9618C5331000FAF513 /* LogInViewController.m in Sources */,
 				5A5519E418882BD300718C48 /* Notification.m in Sources */,
 				5A5519E118882BC400718C48 /* Place.m in Sources */,
 				5A5519E718882BF200718C48 /* LikeNotification.m in Sources */,
+				5AA5AC8D18C4FEEB00FAF513 /* MainViewController.m in Sources */,
 				5A5519F018882C3F00718C48 /* ApprovedFriendNotification.m in Sources */,
+				5AA5AC9318C51F7000FAF513 /* PlaceAnnotation.m in Sources */,
 				5A5519DE18882B8400718C48 /* Photo.m in Sources */,
 				5A5519EA18882C0100718C48 /* CommentNotification.m in Sources */,
 				5A5519DB18882B7B00718C48 /* Fire.m in Sources */,
 				5A5519C3188829FF00718C48 /* User.m in Sources */,
 				5A5519D518882B4000718C48 /* Like.m in Sources */,
 				5A5519A11888240F00718C48 /* SecondViewController.m in Sources */,
+				5AA5AC8C18C4FEEB00FAF513 /* FlipsideViewController.m in Sources */,
 				5A5519981888240F00718C48 /* AppDelegate.m in Sources */,
 				5A5519D218882B3100718C48 /* Video.m in Sources */,
 				5A5519CC18882AD400718C48 /* Member.m in Sources */,
 				5A5519CF18882B1400718C48 /* Location.m in Sources */,
+				5AA5AC9018C50B4900FAF513 /* PlacesLoader.m in Sources */,
+				5AA5AC9918C5332000FAF513 /* SignUpViewController.m in Sources */,
 				5A5519F318882C4A00718C48 /* WarningNotification.m in Sources */,
 				5A5519D818882B6B00718C48 /* Comment.m in Sources */,
 				5A5519C618882A4600718C48 /* Admin.m in Sources */,
 				5A5519C918882A7F00718C48 /* Owner.m in Sources */,
+				5AB7FCE918C3987500C79354 /* ParseLogInViewController.m in Sources */,
 				5A5519ED18882C2600718C48 /* RequestFriendshipNotification.m in Sources */,
 				5A55199E1888240F00718C48 /* FirstViewController.m in Sources */,
+				5AB7FCE618C3986500C79354 /* ParseSignUpViewController.m in Sources */,
 				5A5519941888240F00718C48 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -501,9 +611,19 @@
 				CLANG_WARN__ARC_BRIDGE_CAST_NONARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/berkin/Desktop/XCode/onFire,
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"/Volumes/FreeAgent\\ GoFlex\\ Drive",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "onFire/onFire-Prefix.pch";
 				INFOPLIST_FILE = "onFire/onFire-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/berkin/Desktop/XCode/onFire/Parse.framework/Versions/1.2.18,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
@@ -518,9 +638,19 @@
 				CLANG_WARN__ARC_BRIDGE_CAST_NONARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/berkin/Desktop/XCode/onFire,
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"/Volumes/FreeAgent\\ GoFlex\\ Drive",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "onFire/onFire-Prefix.pch";
 				INFOPLIST_FILE = "onFire/onFire-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/berkin/Desktop/XCode/onFire/Parse.framework/Versions/1.2.18,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
