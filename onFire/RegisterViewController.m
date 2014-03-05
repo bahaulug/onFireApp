@@ -17,6 +17,8 @@
 @implementation RegisterViewController
 
 @synthesize emailRegisterTextField = _emailRegisterTextField, passwordRegisterTextField = _passwordRegisterTextField;
+@synthesize fNameRegisterTextField = _fNameRegisterTextField, lNameRegisterTextField = _lNameRegisterTextField;
+@synthesize genderRegisterTextField = _genderRegisterTextField, birthdayRegisterTextField = _birthdayRegisterTextField;
 
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -40,6 +42,12 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    self.emailRegisterTextField.text = @"aaa@aaa.com";
+    self.passwordRegisterTextField.text = @"aaa";
+    self.fNameRegisterTextField.text = @"ber";
+    self.lNameRegisterTextField.text = @"san";
+    self.genderRegisterTextField.text = @"male";
+    self.birthdayRegisterTextField.text = @"20141010";
 }
 
 - (void)viewDidUnload
@@ -56,14 +64,23 @@
 ////Sign Up Button pressed
 -(IBAction)signUpUserPressed:(id)sender
 {
+    [PFUser logOut];
     PFUser *user = [PFUser user];
     user.username = self.emailRegisterTextField.text;
     user.password = self.passwordRegisterTextField.text;
+    user.email =self.emailRegisterTextField.text;
+    [user setObject:self.fNameRegisterTextField.text forKey:@"firstName"];
+    [user setObject:self.lNameRegisterTextField.text forKey:@"lastName"];
+    [user setObject:self.genderRegisterTextField.text forKey:@"gender"];
+    NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
+    [dateFormat setDateFormat:@"yyyyMMdd"];
+    NSDate *date = [dateFormat dateFromString:self.birthdayRegisterTextField.text];
+    [user setObject:date forKey:@"birthday"];
     
     [user signUpInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
         if (!error) {
             //The registration was succesful, go to the wall
-            [self performSegueWithIdentifier:@"SignupSuccesful" sender:self];
+            [self performSegueWithIdentifier:@"SignupSuccessful" sender:self];
             
         } else {
             //Something bad has ocurred

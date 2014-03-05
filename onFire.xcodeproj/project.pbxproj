@@ -50,7 +50,6 @@
 		5AB7FCE618C3986500C79354 /* ParseSignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AB7FCE518C3986500C79354 /* ParseSignUpViewController.m */; };
 		5AB7FCE918C3987500C79354 /* ParseLogInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AB7FCE818C3987500C79354 /* ParseLogInViewController.m */; };
 		5AB7FCEE18C3A08000C79354 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A5519891888240F00718C48 /* CoreGraphics.framework */; };
-		5AB7FCF618C3A2D200C79354 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AB7FCF518C3A2D200C79354 /* Parse.framework */; };
 		5AB7FCF818C3A2D900C79354 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AB7FCF718C3A2D900C79354 /* AudioToolbox.framework */; };
 		5AB7FCFA18C3A2DD00C79354 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AB7FCF918C3A2DD00C79354 /* CFNetwork.framework */; };
 		5AB7FCFC18C3A2E700C79354 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AB7FCFB18C3A2E700C79354 /* CoreLocation.framework */; };
@@ -60,6 +59,7 @@
 		5AB7FD0618C3A31C00C79354 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AB7FD0118C3A31C00C79354 /* Security.framework */; };
 		5AB7FD0718C3A31C00C79354 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AB7FD0218C3A31C00C79354 /* StoreKit.framework */; };
 		5AB7FD0818C3A31C00C79354 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AB7FD0318C3A31C00C79354 /* SystemConfiguration.framework */; };
+		7F9A3B8018C7AB4E00F9EEA0 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F9A3B7F18C7AB4E00F9EEA0 /* Parse.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -149,7 +149,6 @@
 		5AB7FCE518C3986500C79354 /* ParseSignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParseSignUpViewController.m; sourceTree = "<group>"; };
 		5AB7FCE718C3987500C79354 /* ParseLogInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParseLogInViewController.h; sourceTree = "<group>"; };
 		5AB7FCE818C3987500C79354 /* ParseLogInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParseLogInViewController.m; sourceTree = "<group>"; };
-		5AB7FCF518C3A2D200C79354 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		5AB7FCF718C3A2D900C79354 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		5AB7FCF918C3A2DD00C79354 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		5AB7FCFB18C3A2E700C79354 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -159,6 +158,7 @@
 		5AB7FD0118C3A31C00C79354 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		5AB7FD0218C3A31C00C79354 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		5AB7FD0318C3A31C00C79354 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		7F9A3B7F18C7AB4E00F9EEA0 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +166,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F9A3B8018C7AB4E00F9EEA0 /* Parse.framework in Frameworks */,
 				5AA5AC8718C4FC4800FAF513 /* AVFoundation.framework in Frameworks */,
 				5AB7FD0418C3A31C00C79354 /* MobileCoreServices.framework in Frameworks */,
 				5AB7FD0518C3A31C00C79354 /* QuartzCore.framework in Frameworks */,
@@ -176,7 +177,6 @@
 				5AB7FCFC18C3A2E700C79354 /* CoreLocation.framework in Frameworks */,
 				5AB7FCFA18C3A2DD00C79354 /* CFNetwork.framework in Frameworks */,
 				5AB7FCF818C3A2D900C79354 /* AudioToolbox.framework in Frameworks */,
-				5AB7FCF618C3A2D200C79354 /* Parse.framework in Frameworks */,
 				5AB7FCEE18C3A08000C79354 /* CoreGraphics.framework in Frameworks */,
 				5A55198C1888240F00718C48 /* UIKit.framework in Frameworks */,
 				5A5519C01888245800718C48 /* MapKit.framework in Frameworks */,
@@ -218,6 +218,7 @@
 		5A5519861888240F00718C48 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7F9A3B7F18C7AB4E00F9EEA0 /* Parse.framework */,
 				5AA5AC8618C4FC4800FAF513 /* AVFoundation.framework */,
 				5AB7FCFF18C3A31C00C79354 /* MobileCoreServices.framework */,
 				5AB7FD0018C3A31C00C79354 /* QuartzCore.framework */,
@@ -228,7 +229,6 @@
 				5AB7FCFB18C3A2E700C79354 /* CoreLocation.framework */,
 				5AB7FCF918C3A2DD00C79354 /* CFNetwork.framework */,
 				5AB7FCF718C3A2D900C79354 /* AudioToolbox.framework */,
-				5AB7FCF518C3A2D200C79354 /* Parse.framework */,
 				5A5519BF1888245800718C48 /* MapKit.framework */,
 				5A5519871888240F00718C48 /* Foundation.framework */,
 				5A5519891888240F00718C48 /* CoreGraphics.framework */,
@@ -622,6 +622,7 @@
 					/Users/berkin/Desktop/XCode/onFire,
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 					"/Volumes/FreeAgent\\ GoFlex\\ Drive",
+					/Users/bahaulug/onFireApp,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "onFire/onFire-Prefix.pch";
@@ -649,6 +650,7 @@
 					/Users/berkin/Desktop/XCode/onFire,
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 					"/Volumes/FreeAgent\\ GoFlex\\ Drive",
+					/Users/bahaulug/onFireApp,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "onFire/onFire-Prefix.pch";

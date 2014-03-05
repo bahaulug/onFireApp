@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="mxN-8e-UhE">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="mxN-8e-UhE">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
@@ -544,7 +544,6 @@
                                 </state>
                                 <connections>
                                     <action selector="logInPressed:" destination="DQu-ea-aoh" eventType="touchUpInside" id="cw2-Wt-INc"/>
-                                    <segue destination="6aC-WN-8bs" kind="modal" identifier="LoginSuccessful" id="I3j-kB-5hK"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YFE-eM-yl1">
@@ -564,6 +563,7 @@
                     <connections>
                         <outlet property="emailTextField" destination="aOc-c4-vCG" id="EmJ-YO-62k"/>
                         <outlet property="passwordTextField" destination="Rxh-RG-aED" id="Kka-vl-4yG"/>
+                        <segue destination="6aC-WN-8bs" kind="modal" id="nZX-bv-FVa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hpL-q8-tV3" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -594,15 +594,38 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" secureTextEntry="YES"/>
                             </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="YOE-Pj-ACW">
+                                <rect key="frame" x="51" y="163" width="218" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Birthday" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="gow-sS-8IG">
+                                <rect key="frame" x="51" y="283" width="218" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Gender" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Rqg-S3-LRj">
+                                <rect key="frame" x="51" y="243" width="218" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Zv2-HX-gqf">
+                                <rect key="frame" x="50" y="203" width="218" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qh9-MR-Fgh">
-                                <rect key="frame" x="51" y="168" width="218" height="37"/>
+                                <rect key="frame" x="51" y="310" width="218" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Sign Up">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="signUpUserPressed:" destination="anA-cg-eDt" eventType="touchUpInside" id="eCD-L1-IJU"/>
-                                    <segue destination="6aC-WN-8bs" kind="modal" identifier="SignupSuccessful" id="cdi-zn-fCw"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -610,8 +633,13 @@
                     </view>
                     <navigationItem key="navigationItem" title="Sign Up" id="b2I-ye-Wqd"/>
                     <connections>
+                        <outlet property="birthdayRegisterTextField" destination="gow-sS-8IG" id="uUT-RR-qUb"/>
                         <outlet property="emailRegisterTextField" destination="Abb-9q-lOz" id="Km2-68-XDZ"/>
+                        <outlet property="fNameRegisterTextField" destination="YOE-Pj-ACW" id="F8d-im-QQy"/>
+                        <outlet property="genderRegisterTextField" destination="Rqg-S3-LRj" id="VrH-2n-JeH"/>
+                        <outlet property="lNameRegisterTextField" destination="Zv2-HX-gqf" id="Xl7-dk-a9F"/>
                         <outlet property="passwordRegisterTextField" destination="OP1-QK-V21" id="4F3-uV-AF2"/>
+                        <segue destination="6aC-WN-8bs" kind="modal" identifier="SignupSuccessful" id="2tB-hd-dcu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h9b-az-B9h" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -629,6 +657,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="cdi-zn-fCw"/>
+        <segue reference="2tB-hd-dcu"/>
     </inferredMetricsTieBreakers>
 </document>

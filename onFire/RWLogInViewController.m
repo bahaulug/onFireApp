@@ -44,7 +44,7 @@
     // Email: admin
     // Password: admin
     self.emailTextField.text = user.username;
-    self.passwordTextField.text = user.password;
+    self.passwordTextField.text = @"admin";
 }
 
 - (void)viewDidUnload
@@ -65,7 +65,7 @@
     [PFUser logInWithUsernameInBackground:self.emailTextField.text password:self.passwordTextField.text block:^(PFUser *user, NSError *error) {
         if (user) {
             //Open the wall
-             //[self performSegueWithIdentifier:@"LoginSuccesful" sender:self];
+             [self performSegueWithIdentifier:@"LoginSuccesful" sender:self];
         } else {
             //Something bad has occurred
             NSString *errorString = [[error userInfo] objectForKey:@"error"];
