@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A2E085218C6691400CC9822 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A2E084F18C6691400CC9822 /* RegisterViewController.m */; };
+		5A2E085318C6691400CC9822 /* RWLogInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A2E085118C6691400CC9822 /* RWLogInViewController.m */; };
 		5A5519881888240F00718C48 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A5519871888240F00718C48 /* Foundation.framework */; };
 		5A55198C1888240F00718C48 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A55198B1888240F00718C48 /* UIKit.framework */; };
 		5A5519921888240F00718C48 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5A5519901888240F00718C48 /* InfoPlist.strings */; };
@@ -73,6 +75,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5A2E084E18C6691400CC9822 /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
+		5A2E084F18C6691400CC9822 /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
+		5A2E085018C6691400CC9822 /* RWLogInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWLogInViewController.h; sourceTree = "<group>"; };
+		5A2E085118C6691400CC9822 /* RWLogInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWLogInViewController.m; sourceTree = "<group>"; };
 		5A5519841888240F00718C48 /* onFire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = onFire.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A5519871888240F00718C48 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		5A5519891888240F00718C48 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -287,6 +293,10 @@
 				5AA5AC9518C5331000FAF513 /* LogInViewController.m */,
 				5AA5AC9718C5332000FAF513 /* SignUpViewController.h */,
 				5AA5AC9818C5332000FAF513 /* SignUpViewController.m */,
+				5A2E084E18C6691400CC9822 /* RegisterViewController.h */,
+				5A2E084F18C6691400CC9822 /* RegisterViewController.m */,
+				5A2E085018C6691400CC9822 /* RWLogInViewController.h */,
+				5A2E085118C6691400CC9822 /* RWLogInViewController.m */,
 				5AB7FCE418C3986500C79354 /* ParseSignUpViewController.h */,
 				5AB7FCE518C3986500C79354 /* ParseSignUpViewController.m */,
 				5AB7FCE718C3987500C79354 /* ParseLogInViewController.h */,
@@ -456,6 +466,7 @@
 				5AA5AC9618C5331000FAF513 /* LogInViewController.m in Sources */,
 				5A5519E418882BD300718C48 /* Notification.m in Sources */,
 				5A5519E118882BC400718C48 /* Place.m in Sources */,
+				5A2E085318C6691400CC9822 /* RWLogInViewController.m in Sources */,
 				5A5519E718882BF200718C48 /* LikeNotification.m in Sources */,
 				5AA5AC8D18C4FEEB00FAF513 /* MainViewController.m in Sources */,
 				5A5519F018882C3F00718C48 /* ApprovedFriendNotification.m in Sources */,
@@ -478,6 +489,7 @@
 				5A5519C618882A4600718C48 /* Admin.m in Sources */,
 				5A5519C918882A7F00718C48 /* Owner.m in Sources */,
 				5AB7FCE918C3987500C79354 /* ParseLogInViewController.m in Sources */,
+				5A2E085218C6691400CC9822 /* RegisterViewController.m in Sources */,
 				5A5519ED18882C2600718C48 /* RequestFriendshipNotification.m in Sources */,
 				5A55199E1888240F00718C48 /* FirstViewController.m in Sources */,
 				5AB7FCE618C3986500C79354 /* ParseSignUpViewController.m in Sources */,
