@@ -18,7 +18,6 @@
 		5A55199E1888240F00718C48 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A55199D1888240F00718C48 /* FirstViewController.m */; };
 		5A5519A11888240F00718C48 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A5519A01888240F00718C48 /* SecondViewController.m */; };
 		5A5519A31888240F00718C48 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A5519A21888240F00718C48 /* Images.xcassets */; };
-		5A5519AA1888241000718C48 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A5519A91888241000718C48 /* XCTest.framework */; };
 		5A5519AB1888241000718C48 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A5519871888240F00718C48 /* Foundation.framework */; };
 		5A5519AC1888241000718C48 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A55198B1888240F00718C48 /* UIKit.framework */; };
 		5A5519B41888241000718C48 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5A5519B21888241000718C48 /* InfoPlist.strings */; };
@@ -51,7 +50,6 @@
 		5AB7FCE618C3986500C79354 /* ParseSignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AB7FCE518C3986500C79354 /* ParseSignUpViewController.m */; };
 		5AB7FCE918C3987500C79354 /* ParseLogInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AB7FCE818C3987500C79354 /* ParseLogInViewController.m */; };
 		5AB7FCEE18C3A08000C79354 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A5519891888240F00718C48 /* CoreGraphics.framework */; };
-		5AB7FCEF18C3A09700C79354 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A5519A91888241000718C48 /* XCTest.framework */; };
 		5AB7FCF618C3A2D200C79354 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AB7FCF518C3A2D200C79354 /* Parse.framework */; };
 		5AB7FCF818C3A2D900C79354 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AB7FCF718C3A2D900C79354 /* AudioToolbox.framework */; };
 		5AB7FCFA18C3A2DD00C79354 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AB7FCF918C3A2DD00C79354 /* CFNetwork.framework */; };
@@ -96,7 +94,6 @@
 		5A5519A01888240F00718C48 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		5A5519A21888240F00718C48 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		5A5519A81888241000718C48 /* onFireTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = onFireTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5A5519A91888241000718C48 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		5A5519B11888241000718C48 /* onFireTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "onFireTests-Info.plist"; sourceTree = "<group>"; };
 		5A5519B31888241000718C48 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5A5519B51888241000718C48 /* onFireTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = onFireTests.m; sourceTree = "<group>"; };
@@ -180,7 +177,6 @@
 				5AB7FCFA18C3A2DD00C79354 /* CFNetwork.framework in Frameworks */,
 				5AB7FCF818C3A2D900C79354 /* AudioToolbox.framework in Frameworks */,
 				5AB7FCF618C3A2D200C79354 /* Parse.framework in Frameworks */,
-				5AB7FCEF18C3A09700C79354 /* XCTest.framework in Frameworks */,
 				5AB7FCEE18C3A08000C79354 /* CoreGraphics.framework in Frameworks */,
 				5A55198C1888240F00718C48 /* UIKit.framework in Frameworks */,
 				5A5519C01888245800718C48 /* MapKit.framework in Frameworks */,
@@ -192,7 +188,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5A5519AA1888241000718C48 /* XCTest.framework in Frameworks */,
 				5A5519AC1888241000718C48 /* UIKit.framework in Frameworks */,
 				5A5519AB1888241000718C48 /* Foundation.framework in Frameworks */,
 			);
@@ -238,7 +233,6 @@
 				5A5519871888240F00718C48 /* Foundation.framework */,
 				5A5519891888240F00718C48 /* CoreGraphics.framework */,
 				5A55198B1888240F00718C48 /* UIKit.framework */,
-				5A5519A91888241000718C48 /* XCTest.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
