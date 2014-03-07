@@ -12,6 +12,11 @@
 
 @interface RegisterViewController ()
 
+@property (nonatomic, strong) UITextField *activeField;
+//@property (nonatomic, assign) CGRect initialFrame;
+@property (nonatomic, assign) CGPoint initialOffset;
+@property (nonatomic, assign) CGSize kbSize;
+
 @end
 
 @implementation RegisterViewController
@@ -19,6 +24,8 @@
 @synthesize emailRegisterTextField = _emailRegisterTextField, passwordRegisterTextField = _passwordRegisterTextField;
 @synthesize fNameRegisterTextField = _fNameRegisterTextField, lNameRegisterTextField = _lNameRegisterTextField;
 @synthesize genderRegisterTextField = _genderRegisterTextField, birthdayRegisterTextField = _birthdayRegisterTextField;
+@synthesize scrollView, activeField, initialOffset, kbSize;
+//@synthesize initialFrame;
 
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -41,6 +48,27 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(hideKeyboard)];
+    
+    // prevents the scroll view from swallowing up the touch event of child buttons
+    tapGesture.cancelsTouchesInView = NO;
+    tapGesture.delegate = self;
+    [scrollView addGestureRecognizer:tapGesture];
+    
+    self.automaticallyAdjustsScrollViewInsets = NO;
+    initialOffset = scrollView.contentOffset;
+    //initialFrame = scrollView.frame;
+    kbSize = CGSizeMake(0.0, 0.0);
+    
+    _emailRegisterTextField.delegate = self;
+    _passwordRegisterTextField.delegate = self;
+    _fNameRegisterTextField.delegate = self;
+    _lNameRegisterTextField.delegate = self;
+    _genderRegisterTextField.delegate = self;
+    _birthdayRegisterTextField.delegate = self;
+    [self registerForKeyboardNotifications];
+    
     // Do any additional setup after loading the view from its nib.
     self.emailRegisterTextField.text = @"aaa@aaa.com";
     self.passwordRegisterTextField.text = @"aaa";
@@ -96,8 +124,82 @@
             [errorAlertView show];
         }
     }];
+}
 
+// Call this method somewhere in your view controller setup code.
+- (void)registerForKeyboardNotifications
+{
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(keyboardWasShown:)
+                                                 name:UIKeyboardDidShowNotification object:nil];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(keyboardWillBeHidden:)
+                                                 name:UIKeyboardWillHideNotification object:nil];
+}
 
+// Called when the UIKeyboardDidShowNotification is sent.
+- (void)keyboardWasShown:(NSNotification*)aNotification
+{
+    NSDictionary* info = [aNotification userInfo];
+    kbSize = [[info objectForKey:UIKeyboardFrameBeginUserInfoKey] CGRectValue].size;
+    //CGRect bkgndRect = activeField.frame;
+    //bkgndRect.size.height += kbSize.height;
+    //[activeField setFrame:bkgndRect];
+    [scrollView setContentOffset:CGPointMake(0.0, activeField.frame.origin.y-kbSize.height) animated:YES];
+}
+
+// Called when the UIKeyboardWillHideNotification is sent
+- (void)keyboardWillBeHidden:(NSNotification*)aNotification
+{
+    //[activeField setFrame:initialFrame];
+    [scrollView setContentOffset:initialOffset animated:YES];
+    kbSize = CGSizeMake(0.0, 0.0);
+}
+
+- (void)textFieldDidBeginEditing:(UITextField *)textField
+{
+    activeField = textField;
+    if (kbSize.width != 0.0 && kbSize.height != 0.0)
+    {
+        //CGRect bkgndRect = activeField.frame;
+        //bkgndRect.size.height += kbSize.height;
+        //[activeField setFrame:bkgndRect];
+        [scrollView setContentOffset:CGPointMake(0.0, activeField.frame.origin.y-kbSize.height) animated:YES];
+    }
+}
+
+- (void)textFieldDidEndEditing:(UITextField *)textField
+{
+    activeField = nil;
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    if (textField == _emailRegisterTextField) {
+        [textField resignFirstResponder];
+        [_passwordRegisterTextField becomeFirstResponder];
+    } else if (textField == _passwordRegisterTextField) {
+        [textField resignFirstResponder];
+        [_fNameRegisterTextField becomeFirstResponder];
+    } else if (textField == _fNameRegisterTextField) {
+        [textField resignFirstResponder];
+        [_lNameRegisterTextField becomeFirstResponder];
+    } else if (textField == _lNameRegisterTextField) {
+        [textField resignFirstResponder];
+        [_birthdayRegisterTextField becomeFirstResponder];
+    } else if (textField == _birthdayRegisterTextField) {
+        [textField resignFirstResponder];
+        [_genderRegisterTextField becomeFirstResponder];
+    } else if (textField == _genderRegisterTextField) {
+        [self signUpUserPressed:nil];
+    }
+    return YES;
+}
+
+// method to hide keyboard when user taps on a scrollview
+-(void)hideKeyboard
+{
+    [self.view endEditing:YES];
 }
 
 @end

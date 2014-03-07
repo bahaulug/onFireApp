@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>4392B74B-BA34-4414-8518-C24956F375FA</string>
+	<key>IDESourceControlProjectName</key>
+	<string>onFire</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>E21DECE5-7F7C-475C-85BA-1B9B2C9C12B8</key>
+		<string>https://github.com/bahaulug/onFireApp.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>onFire.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>E21DECE5-7F7C-475C-85BA-1B9B2C9C12B8</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/bahaulug/onFireApp.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>E21DECE5-7F7C-475C-85BA-1B9B2C9C12B8</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>E21DECE5-7F7C-475C-85BA-1B9B2C9C12B8</string>
+			<key>IDESourceControlWCCName</key>
+			<string>onFireApp</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -86,6 +86,10 @@ NSString * const klongitudeKeypath = @"geometry.location.lng";
     }
 }
 
+- (BOOL)prefersStatusBarHidden {
+    return YES;
+}
+
 #pragma mark - Flipside View
 
 - (void)flipsideViewControllerDidFinish:(FlipsideViewController *)controller

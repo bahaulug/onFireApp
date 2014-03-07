@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		5A2E085218C6691400CC9822 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A2E084F18C6691400CC9822 /* RegisterViewController.m */; };
-		5A2E085318C6691400CC9822 /* RWLogInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A2E085118C6691400CC9822 /* RWLogInViewController.m */; };
 		5A5519881888240F00718C48 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A5519871888240F00718C48 /* Foundation.framework */; };
 		5A55198C1888240F00718C48 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A55198B1888240F00718C48 /* UIKit.framework */; };
 		5A5519921888240F00718C48 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5A5519901888240F00718C48 /* InfoPlist.strings */; };
@@ -46,9 +45,6 @@
 		5AA5AC9018C50B4900FAF513 /* PlacesLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AA5AC8F18C50B4900FAF513 /* PlacesLoader.m */; };
 		5AA5AC9318C51F7000FAF513 /* PlaceAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AA5AC9218C51F7000FAF513 /* PlaceAnnotation.m */; };
 		5AA5AC9618C5331000FAF513 /* LogInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AA5AC9518C5331000FAF513 /* LogInViewController.m */; };
-		5AA5AC9918C5332000FAF513 /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AA5AC9818C5332000FAF513 /* SignUpViewController.m */; };
-		5AB7FCE618C3986500C79354 /* ParseSignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AB7FCE518C3986500C79354 /* ParseSignUpViewController.m */; };
-		5AB7FCE918C3987500C79354 /* ParseLogInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AB7FCE818C3987500C79354 /* ParseLogInViewController.m */; };
 		5AB7FCEE18C3A08000C79354 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A5519891888240F00718C48 /* CoreGraphics.framework */; };
 		5AB7FCF818C3A2D900C79354 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AB7FCF718C3A2D900C79354 /* AudioToolbox.framework */; };
 		5AB7FCFA18C3A2DD00C79354 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AB7FCF918C3A2DD00C79354 /* CFNetwork.framework */; };
@@ -59,7 +55,7 @@
 		5AB7FD0618C3A31C00C79354 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AB7FD0118C3A31C00C79354 /* Security.framework */; };
 		5AB7FD0718C3A31C00C79354 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AB7FD0218C3A31C00C79354 /* StoreKit.framework */; };
 		5AB7FD0818C3A31C00C79354 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AB7FD0318C3A31C00C79354 /* SystemConfiguration.framework */; };
-		7F9A3B8018C7AB4E00F9EEA0 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F9A3B7F18C7AB4E00F9EEA0 /* Parse.framework */; };
+		7424137618C9D65D0074C5A6 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7424137518C9D65D0074C5A6 /* Parse.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,8 +71,6 @@
 /* Begin PBXFileReference section */
 		5A2E084E18C6691400CC9822 /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
 		5A2E084F18C6691400CC9822 /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
-		5A2E085018C6691400CC9822 /* RWLogInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWLogInViewController.h; sourceTree = "<group>"; };
-		5A2E085118C6691400CC9822 /* RWLogInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWLogInViewController.m; sourceTree = "<group>"; };
 		5A5519841888240F00718C48 /* onFire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = onFire.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A5519871888240F00718C48 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		5A5519891888240F00718C48 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -143,12 +137,6 @@
 		5AA5AC9218C51F7000FAF513 /* PlaceAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaceAnnotation.m; sourceTree = "<group>"; };
 		5AA5AC9418C5331000FAF513 /* LogInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogInViewController.h; sourceTree = "<group>"; };
 		5AA5AC9518C5331000FAF513 /* LogInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogInViewController.m; sourceTree = "<group>"; };
-		5AA5AC9718C5332000FAF513 /* SignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpViewController.h; sourceTree = "<group>"; };
-		5AA5AC9818C5332000FAF513 /* SignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpViewController.m; sourceTree = "<group>"; };
-		5AB7FCE418C3986500C79354 /* ParseSignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParseSignUpViewController.h; sourceTree = "<group>"; };
-		5AB7FCE518C3986500C79354 /* ParseSignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParseSignUpViewController.m; sourceTree = "<group>"; };
-		5AB7FCE718C3987500C79354 /* ParseLogInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParseLogInViewController.h; sourceTree = "<group>"; };
-		5AB7FCE818C3987500C79354 /* ParseLogInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParseLogInViewController.m; sourceTree = "<group>"; };
 		5AB7FCF718C3A2D900C79354 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		5AB7FCF918C3A2DD00C79354 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		5AB7FCFB18C3A2E700C79354 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -158,7 +146,7 @@
 		5AB7FD0118C3A31C00C79354 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		5AB7FD0218C3A31C00C79354 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		5AB7FD0318C3A31C00C79354 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		7F9A3B7F18C7AB4E00F9EEA0 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		7424137518C9D65D0074C5A6 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,7 +154,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7F9A3B8018C7AB4E00F9EEA0 /* Parse.framework in Frameworks */,
+				7424137618C9D65D0074C5A6 /* Parse.framework in Frameworks */,
 				5AA5AC8718C4FC4800FAF513 /* AVFoundation.framework in Frameworks */,
 				5AB7FD0418C3A31C00C79354 /* MobileCoreServices.framework in Frameworks */,
 				5AB7FD0518C3A31C00C79354 /* QuartzCore.framework in Frameworks */,
@@ -218,7 +206,7 @@
 		5A5519861888240F00718C48 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				7F9A3B7F18C7AB4E00F9EEA0 /* Parse.framework */,
+				7424137518C9D65D0074C5A6 /* Parse.framework */,
 				5AA5AC8618C4FC4800FAF513 /* AVFoundation.framework */,
 				5AB7FCFF18C3A31C00C79354 /* MobileCoreServices.framework */,
 				5AB7FD0018C3A31C00C79354 /* QuartzCore.framework */,
@@ -285,16 +273,8 @@
 				5A5519991888240F00718C48 /* Main.storyboard */,
 				5AA5AC9418C5331000FAF513 /* LogInViewController.h */,
 				5AA5AC9518C5331000FAF513 /* LogInViewController.m */,
-				5AA5AC9718C5332000FAF513 /* SignUpViewController.h */,
-				5AA5AC9818C5332000FAF513 /* SignUpViewController.m */,
 				5A2E084E18C6691400CC9822 /* RegisterViewController.h */,
 				5A2E084F18C6691400CC9822 /* RegisterViewController.m */,
-				5A2E085018C6691400CC9822 /* RWLogInViewController.h */,
-				5A2E085118C6691400CC9822 /* RWLogInViewController.m */,
-				5AB7FCE418C3986500C79354 /* ParseSignUpViewController.h */,
-				5AB7FCE518C3986500C79354 /* ParseSignUpViewController.m */,
-				5AB7FCE718C3987500C79354 /* ParseLogInViewController.h */,
-				5AB7FCE818C3987500C79354 /* ParseLogInViewController.m */,
 				5AA5AC8818C4FEEB00FAF513 /* FlipsideViewController.h */,
 				5AA5AC8918C4FEEB00FAF513 /* FlipsideViewController.m */,
 				5AA5AC8A18C4FEEB00FAF513 /* MainViewController.h */,
@@ -460,7 +440,6 @@
 				5AA5AC9618C5331000FAF513 /* LogInViewController.m in Sources */,
 				5A5519E418882BD300718C48 /* Notification.m in Sources */,
 				5A5519E118882BC400718C48 /* Place.m in Sources */,
-				5A2E085318C6691400CC9822 /* RWLogInViewController.m in Sources */,
 				5A5519E718882BF200718C48 /* LikeNotification.m in Sources */,
 				5AA5AC8D18C4FEEB00FAF513 /* MainViewController.m in Sources */,
 				5A5519F018882C3F00718C48 /* ApprovedFriendNotification.m in Sources */,
@@ -477,16 +456,13 @@
 				5A5519CC18882AD400718C48 /* Member.m in Sources */,
 				5A5519CF18882B1400718C48 /* Location.m in Sources */,
 				5AA5AC9018C50B4900FAF513 /* PlacesLoader.m in Sources */,
-				5AA5AC9918C5332000FAF513 /* SignUpViewController.m in Sources */,
 				5A5519F318882C4A00718C48 /* WarningNotification.m in Sources */,
 				5A5519D818882B6B00718C48 /* Comment.m in Sources */,
 				5A5519C618882A4600718C48 /* Admin.m in Sources */,
 				5A5519C918882A7F00718C48 /* Owner.m in Sources */,
-				5AB7FCE918C3987500C79354 /* ParseLogInViewController.m in Sources */,
 				5A2E085218C6691400CC9822 /* RegisterViewController.m in Sources */,
 				5A5519ED18882C2600718C48 /* RequestFriendshipNotification.m in Sources */,
 				5A55199E1888240F00718C48 /* FirstViewController.m in Sources */,
-				5AB7FCE618C3986500C79354 /* ParseSignUpViewController.m in Sources */,
 				5A5519941888240F00718C48 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -623,6 +599,7 @@
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 					"/Volumes/FreeAgent\\ GoFlex\\ Drive",
 					/Users/bahaulug/onFireApp,
+					/Users/ekremoyun/Desktop/github/onFireApp,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "onFire/onFire-Prefix.pch";
@@ -651,6 +628,7 @@
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 					"/Volumes/FreeAgent\\ GoFlex\\ Drive",
 					/Users/bahaulug/onFireApp,
+					/Users/ekremoyun/Desktop/github/onFireApp,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "onFire/onFire-Prefix.pch";

@@ -1,18 +1,21 @@
 //
-//  LogInViewController.h
-//  onFire
+//  LoginViewController.h
+//  TutorialBase
 //
-//  Created by Berkin Sansal on 4.03.2014.
-//  Copyright (c) 2014 Berkin Sansal. All rights reserved.
+//  Created by Antonio MG on 6/23/12.
+//  Copyright (c) 2012 AMG. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface LogInViewController : UIViewController
+
+@interface LogInViewController : UIViewController <UITextFieldDelegate>
+
 
 @property (nonatomic, strong) IBOutlet UITextField *emailTextField;
 @property (nonatomic, strong) IBOutlet UITextField *passwordTextField;
 
--(IBAction)logInButtonPressed:(id)sender;
+
+-(IBAction)logInPressed:(id)sender;
 
 @end

@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 
-@interface RegisterViewController : UIViewController
+@interface RegisterViewController : UIViewController <UITextFieldDelegate>
 
 @property (nonatomic, strong) IBOutlet UITextField *emailRegisterTextField;
 @property (nonatomic, strong) IBOutlet UITextField *passwordRegisterTextField;
@@ -17,6 +17,7 @@
 @property (nonatomic, strong) IBOutlet UITextField *lNameRegisterTextField;
 @property (nonatomic, strong) IBOutlet UITextField *genderRegisterTextField;
 @property (nonatomic, strong) IBOutlet UITextField *birthdayRegisterTextField;
+@property (nonatomic, strong) IBOutlet UIScrollView *scrollView;
 
 -(IBAction)signUpUserPressed:(id)sender;
 
