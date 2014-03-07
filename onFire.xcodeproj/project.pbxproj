@@ -14,8 +14,6 @@
 		5A5519941888240F00718C48 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A5519931888240F00718C48 /* main.m */; };
 		5A5519981888240F00718C48 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A5519971888240F00718C48 /* AppDelegate.m */; };
 		5A55199B1888240F00718C48 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A5519991888240F00718C48 /* Main.storyboard */; };
-		5A55199E1888240F00718C48 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A55199D1888240F00718C48 /* FirstViewController.m */; };
-		5A5519A11888240F00718C48 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A5519A01888240F00718C48 /* SecondViewController.m */; };
 		5A5519A31888240F00718C48 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A5519A21888240F00718C48 /* Images.xcassets */; };
 		5A5519AB1888241000718C48 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A5519871888240F00718C48 /* Foundation.framework */; };
 		5A5519AC1888241000718C48 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A55198B1888240F00718C48 /* UIKit.framework */; };
@@ -56,6 +54,7 @@
 		5AB7FD0718C3A31C00C79354 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AB7FD0218C3A31C00C79354 /* StoreKit.framework */; };
 		5AB7FD0818C3A31C00C79354 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AB7FD0318C3A31C00C79354 /* SystemConfiguration.framework */; };
 		7424137618C9D65D0074C5A6 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7424137518C9D65D0074C5A6 /* Parse.framework */; };
+		7424137918C9F0430074C5A6 /* InitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7424137818C9F0430074C5A6 /* InitialViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,10 +81,6 @@
 		5A5519961888240F00718C48 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5A5519971888240F00718C48 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		5A55199A1888240F00718C48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		5A55199C1888240F00718C48 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		5A55199D1888240F00718C48 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		5A55199F1888240F00718C48 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		5A5519A01888240F00718C48 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		5A5519A21888240F00718C48 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		5A5519A81888241000718C48 /* onFireTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = onFireTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A5519B11888241000718C48 /* onFireTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "onFireTests-Info.plist"; sourceTree = "<group>"; };
@@ -147,6 +142,8 @@
 		5AB7FD0218C3A31C00C79354 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		5AB7FD0318C3A31C00C79354 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		7424137518C9D65D0074C5A6 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		7424137718C9F0430074C5A6 /* InitialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InitialViewController.h; sourceTree = "<group>"; };
+		7424137818C9F0430074C5A6 /* InitialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InitialViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -279,10 +276,8 @@
 				5AA5AC8918C4FEEB00FAF513 /* FlipsideViewController.m */,
 				5AA5AC8A18C4FEEB00FAF513 /* MainViewController.h */,
 				5AA5AC8B18C4FEEB00FAF513 /* MainViewController.m */,
-				5A55199C1888240F00718C48 /* FirstViewController.h */,
-				5A55199D1888240F00718C48 /* FirstViewController.m */,
-				5A55199F1888240F00718C48 /* SecondViewController.h */,
-				5A5519A01888240F00718C48 /* SecondViewController.m */,
+				7424137718C9F0430074C5A6 /* InitialViewController.h */,
+				7424137818C9F0430074C5A6 /* InitialViewController.m */,
 			);
 			name = GUI;
 			sourceTree = "<group>";
@@ -449,10 +444,10 @@
 				5A5519DB18882B7B00718C48 /* Fire.m in Sources */,
 				5A5519C3188829FF00718C48 /* User.m in Sources */,
 				5A5519D518882B4000718C48 /* Like.m in Sources */,
-				5A5519A11888240F00718C48 /* SecondViewController.m in Sources */,
 				5AA5AC8C18C4FEEB00FAF513 /* FlipsideViewController.m in Sources */,
 				5A5519981888240F00718C48 /* AppDelegate.m in Sources */,
 				5A5519D218882B3100718C48 /* Video.m in Sources */,
+				7424137918C9F0430074C5A6 /* InitialViewController.m in Sources */,
 				5A5519CC18882AD400718C48 /* Member.m in Sources */,
 				5A5519CF18882B1400718C48 /* Location.m in Sources */,
 				5AA5AC9018C50B4900FAF513 /* PlacesLoader.m in Sources */,
@@ -462,7 +457,6 @@
 				5A5519C918882A7F00718C48 /* Owner.m in Sources */,
 				5A2E085218C6691400CC9822 /* RegisterViewController.m in Sources */,
 				5A5519ED18882C2600718C48 /* RequestFriendshipNotification.m in Sources */,
-				5A55199E1888240F00718C48 /* FirstViewController.m in Sources */,
 				5A5519941888240F00718C48 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -10,4 +10,6 @@
 
 @interface MainViewController : UIViewController <FlipsideViewControllerDelegate>
 
+-(IBAction)xTabButtonPressed:(id)sender;
+
 @end

@@ -12,6 +12,7 @@
 #import "PlacesLoader.h"
 #import "Place.h"
 #import "PlaceAnnotation.h"
+#import <Parse/Parse.h>
 
 NSString * const kNameKey = @"name";
 NSString * const kReferenceKey = @"reference";
@@ -88,6 +89,12 @@ NSString * const klongitudeKeypath = @"geometry.location.lng";
 
 - (BOOL)prefersStatusBarHidden {
     return YES;
+}
+
+- (IBAction)xTabButtonPressed:(id)sender
+{
+    [PFUser logOut];
+    [self performSegueWithIdentifier:@"Logout" sender:self];
 }
 
 #pragma mark - Flipside View
