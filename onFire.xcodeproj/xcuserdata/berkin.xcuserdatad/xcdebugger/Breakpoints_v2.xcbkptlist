@@ -25,7 +25,7 @@
                   symbolName = "-[User firstName]"
                   moduleName = "onFire"
                   urlString = "file:///Users/berkin/Desktop/XCode/onFire/onFire/User.h"
-                  timestampString = "415716393.153006"
+                  timestampString = "416433181.645585"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "16"
@@ -39,7 +39,7 @@
                   symbolName = "-[Member firstName]"
                   moduleName = "onFire"
                   urlString = "file:///Users/berkin/Desktop/XCode/onFire/onFire/User.h"
-                  timestampString = "415716393.153252"
+                  timestampString = "416433181.645984"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "16"
@@ -53,7 +53,7 @@
                   symbolName = "-[Admin firstName]"
                   moduleName = "onFire"
                   urlString = "file:///Users/berkin/Desktop/XCode/onFire/onFire/User.h"
-                  timestampString = "415716393.153435"
+                  timestampString = "416433181.646324"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "16"
@@ -67,7 +67,7 @@
                   symbolName = "-[Owner firstName]"
                   moduleName = "onFire"
                   urlString = "file:///Users/berkin/Desktop/XCode/onFire/onFire/User.h"
-                  timestampString = "415716393.153671"
+                  timestampString = "416433181.646665"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "16"
@@ -75,6 +75,22 @@
                   offsetFromSymbolStart = "16">
                </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "onFire/FlipsideViewController.m"
+            timestampString = "416432451.995962"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "106"
+            endingLineNumber = "106"
+            landmarkName = "-didTouchMarkerView:"
+            landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

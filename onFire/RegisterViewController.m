@@ -24,6 +24,8 @@
 @synthesize emailRegisterTextField = _emailRegisterTextField, passwordRegisterTextField = _passwordRegisterTextField;
 @synthesize fNameRegisterTextField = _fNameRegisterTextField, lNameRegisterTextField = _lNameRegisterTextField;
 @synthesize genderRegisterTextField = _genderRegisterTextField, birthdayRegisterTextField = _birthdayRegisterTextField;
+@synthesize signUpButton = _signUpButton;
+@synthesize imgToUpload = _imgToUpload;
 @synthesize scrollView, activeField, initialOffset, kbSize;
 //@synthesize initialFrame;
 
@@ -41,7 +43,6 @@
 {
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
-
 
 #pragma mark - View lifecycle
 
@@ -86,44 +87,88 @@
     self.passwordRegisterTextField = nil;
 }
 
+-(IBAction)addPicturePressed:(id)sender
+{
+    //Open a UIImagePickerController to select the picture
+    UIImagePickerController *imgPicker = [[UIImagePickerController alloc] init];
+    imgPicker.delegate = self;
+    imgPicker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+    
+    [self.navigationController presentModalViewController:imgPicker animated:YES];
+}
+
+#pragma mark UIImagePicker delegate
+
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingImage:(UIImage *)img editingInfo:(NSDictionary *)editInfo
+{
+    
+    [picker dismissModalViewControllerAnimated:YES];
+    
+    //Place the image in the imageview
+    self.imgToUpload.image = img;
+}
 
 #pragma mark IB Actions
 
 ////Sign Up Button pressed
 -(IBAction)signUpUserPressed:(id)sender
 {
-    [PFUser logOut];
-    PFUser *user = [PFUser user];
-    user.username = self.emailRegisterTextField.text;
-    user.password = self.passwordRegisterTextField.text;
-    user.email =self.emailRegisterTextField.text;
-    [user setObject:self.fNameRegisterTextField.text forKey:@"firstName"];
-    [user setObject:self.lNameRegisterTextField.text forKey:@"lastName"];
-    [user setObject:self.genderRegisterTextField.text forKey:@"gender"];
-    NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
-    [dateFormat setDateFormat:@"yyyyMMdd"];
-    NSDate *date = [dateFormat dateFromString:self.birthdayRegisterTextField.text];
-    [user setObject:date forKey:@"birthday"];
+    //Disable the sign up button until we are ready
+    self.signUpButton.enabled = NO;
     
-    [user signUpInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
-        if (!error) {
-            //The registration was succesful, go to the wall
-            [self performSegueWithIdentifier:@"SignupSuccessful" sender:self];
+    
+    //Place the loading spinner
+    UIActivityIndicatorView *loadingSpinner = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
+    
+    [loadingSpinner setCenter:CGPointMake(scrollView.frame.size.width/20.0, self.view.frame.size.height/2.0)];
+    [loadingSpinner startAnimating];
+    
+    [self.scrollView addSubview:loadingSpinner];
+    
+    //Upload a new picture
+    NSData *pictureData = UIImageJPEGRepresentation(self.imgToUpload.image, 0.8f);
+    //NSData *pictureData = UIImagePNGRepresentation(self.imgToUpload.image);
+    
+    PFFile *file = [PFFile fileWithData:pictureData];
+    
+            [PFUser logOut];
+            PFUser *user = [PFUser user];
+            user.username = self.emailRegisterTextField.text;
+            user.password = self.passwordRegisterTextField.text;
+            user.email =self.emailRegisterTextField.text;
+            [user setObject:self.fNameRegisterTextField.text forKey:@"firstName"];
+            [user setObject:self.lNameRegisterTextField.text forKey:@"lastName"];
+            [user setObject:self.genderRegisterTextField.text forKey:@"gender"];
+            NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
+            [dateFormat setDateFormat:@"yyyyMMdd"];
+            NSDate *date = [dateFormat dateFromString:self.birthdayRegisterTextField.text];
+            [user setObject:date forKey:@"birthday"];
+            [user setObject:file forKey:@"profilePicture"];
             
-        } else {
-            //Something bad has ocurred
-            NSString *errorString = [[error userInfo] objectForKey:@"error"];
-            UIAlertView *errorAlertView;
-            if ([errorString rangeOfString:@"username"].location != NSNotFound && [errorString rangeOfString:@"already taken"].location != NSNotFound) {
-                errorAlertView = [[UIAlertView alloc] initWithTitle:@"Error" message:@"This email is already taken" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
-            }
-            else
-            {
-                errorAlertView = [[UIAlertView alloc] initWithTitle:@"Error" message:errorString delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
-            }
-            [errorAlertView show];
-        }
-    }];
+            [user signUpInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+                if (!error) {
+                    //The registration was succesful, go to the wall
+                    [self performSegueWithIdentifier:@"SignupSuccessful" sender:self];
+                    
+                } else {
+                    //Something bad has ocurred
+                    NSString *errorString = [[error userInfo] objectForKey:@"error"];
+                    UIAlertView *errorAlertView;
+                    if ([errorString rangeOfString:@"username"].location != NSNotFound && [errorString rangeOfString:@"already taken"].location != NSNotFound) {
+                        errorAlertView = [[UIAlertView alloc] initWithTitle:@"Error" message:@"This email is already taken" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
+                    }
+                    else
+                    {
+                        errorAlertView = [[UIAlertView alloc] initWithTitle:@"Error" message:errorString delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
+                    }
+                    [errorAlertView show];
+                }
+                
+                [loadingSpinner stopAnimating];
+                [loadingSpinner removeFromSuperview];
+                self.signUpButton.enabled = YES;
+            }];
+        
 }
 
 // Call this method somewhere in your view controller setup code.

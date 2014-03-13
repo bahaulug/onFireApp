@@ -38,4 +38,6 @@
 
 - (id)initWithLocation:(CLLocation *)location reference:(NSString *)reference name:(NSString *)name address:(NSString *)address;
 
+- (NSString *)infoText;
+
 @end

@@ -108,6 +108,8 @@ NSString * const klongitudeKeypath = @"geometry.location.lng";
 {
     if ([[segue identifier] isEqualToString:@"showAlternate"]) {
         [[segue destinationViewController] setDelegate:self];
+        [[segue destinationViewController] setLocations:_locations];
+        [[segue destinationViewController] setUserLocation:[_mapView userLocation]];
     }
 }
 

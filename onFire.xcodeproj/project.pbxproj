@@ -43,6 +43,14 @@
 		5AA5AC9018C50B4900FAF513 /* PlacesLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AA5AC8F18C50B4900FAF513 /* PlacesLoader.m */; };
 		5AA5AC9318C51F7000FAF513 /* PlaceAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AA5AC9218C51F7000FAF513 /* PlaceAnnotation.m */; };
 		5AA5AC9618C5331000FAF513 /* LogInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AA5AC9518C5331000FAF513 /* LogInViewController.m */; };
+		5AAADFB118CA5E9F00897ABB /* UploadImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AAADFAE18CA5E9F00897ABB /* UploadImageViewController.m */; };
+		5AAADFB218CA5E9F00897ABB /* WallPicturesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AAADFB018CA5E9F00897ABB /* WallPicturesViewController.m */; };
+		5AB3F0DD18D217C700B78B07 /* ARCoordinate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AB3F0D218D217C700B78B07 /* ARCoordinate.m */; };
+		5AB3F0DE18D217C700B78B07 /* ARGeoCoordinate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AB3F0D418D217C700B78B07 /* ARGeoCoordinate.m */; };
+		5AB3F0DF18D217C700B78B07 /* ARKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AB3F0D618D217C700B78B07 /* ARKit.m */; };
+		5AB3F0E018D217C700B78B07 /* AugmentedRealityController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AB3F0DA18D217C700B78B07 /* AugmentedRealityController.m */; };
+		5AB3F0E118D217C700B78B07 /* GEOLocations.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AB3F0DC18D217C700B78B07 /* GEOLocations.m */; };
+		5AB3F0E418D2240D00B78B07 /* MarkerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AB3F0E318D2240D00B78B07 /* MarkerView.m */; };
 		5AB7FCEE18C3A08000C79354 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A5519891888240F00718C48 /* CoreGraphics.framework */; };
 		5AB7FCF818C3A2D900C79354 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AB7FCF718C3A2D900C79354 /* AudioToolbox.framework */; };
 		5AB7FCFA18C3A2DD00C79354 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AB7FCF918C3A2DD00C79354 /* CFNetwork.framework */; };
@@ -132,6 +140,25 @@
 		5AA5AC9218C51F7000FAF513 /* PlaceAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaceAnnotation.m; sourceTree = "<group>"; };
 		5AA5AC9418C5331000FAF513 /* LogInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogInViewController.h; sourceTree = "<group>"; };
 		5AA5AC9518C5331000FAF513 /* LogInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogInViewController.m; sourceTree = "<group>"; };
+		5AAADFAD18CA5E9F00897ABB /* UploadImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UploadImageViewController.h; sourceTree = "<group>"; };
+		5AAADFAE18CA5E9F00897ABB /* UploadImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UploadImageViewController.m; sourceTree = "<group>"; };
+		5AAADFAF18CA5E9F00897ABB /* WallPicturesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WallPicturesViewController.h; sourceTree = "<group>"; };
+		5AAADFB018CA5E9F00897ABB /* WallPicturesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WallPicturesViewController.m; sourceTree = "<group>"; };
+		5AAADFB318CA5FD600897ABB /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		5AB3F0D118D217C700B78B07 /* ARCoordinate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARCoordinate.h; sourceTree = "<group>"; };
+		5AB3F0D218D217C700B78B07 /* ARCoordinate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARCoordinate.m; sourceTree = "<group>"; };
+		5AB3F0D318D217C700B78B07 /* ARGeoCoordinate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARGeoCoordinate.h; sourceTree = "<group>"; };
+		5AB3F0D418D217C700B78B07 /* ARGeoCoordinate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARGeoCoordinate.m; sourceTree = "<group>"; };
+		5AB3F0D518D217C700B78B07 /* ARKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARKit.h; sourceTree = "<group>"; };
+		5AB3F0D618D217C700B78B07 /* ARKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARKit.m; sourceTree = "<group>"; };
+		5AB3F0D718D217C700B78B07 /* ARLocationDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARLocationDelegate.h; sourceTree = "<group>"; };
+		5AB3F0D818D217C700B78B07 /* ARViewProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARViewProtocol.h; sourceTree = "<group>"; };
+		5AB3F0D918D217C700B78B07 /* AugmentedRealityController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AugmentedRealityController.h; sourceTree = "<group>"; };
+		5AB3F0DA18D217C700B78B07 /* AugmentedRealityController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AugmentedRealityController.m; sourceTree = "<group>"; };
+		5AB3F0DB18D217C700B78B07 /* GEOLocations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GEOLocations.h; sourceTree = "<group>"; };
+		5AB3F0DC18D217C700B78B07 /* GEOLocations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GEOLocations.m; sourceTree = "<group>"; };
+		5AB3F0E218D2240D00B78B07 /* MarkerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarkerView.h; sourceTree = "<group>"; };
+		5AB3F0E318D2240D00B78B07 /* MarkerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MarkerView.m; sourceTree = "<group>"; };
 		5AB7FCF718C3A2D900C79354 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		5AB7FCF918C3A2DD00C79354 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		5AB7FCFB18C3A2E700C79354 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -225,6 +252,7 @@
 		5A55198D1888240F00718C48 /* onFire */ = {
 			isa = PBXGroup;
 			children = (
+				5AB3F0D018D217C700B78B07 /* ARKit */,
 				5AB7FCE318C395FB00C79354 /* Model */,
 				5AB7FCE218C395EF00C79354 /* GUI */,
 				5A5519A21888240F00718C48 /* Images.xcassets */,
@@ -262,9 +290,33 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		5AB3F0D018D217C700B78B07 /* ARKit */ = {
+			isa = PBXGroup;
+			children = (
+				5AB3F0D118D217C700B78B07 /* ARCoordinate.h */,
+				5AB3F0D218D217C700B78B07 /* ARCoordinate.m */,
+				5AB3F0D318D217C700B78B07 /* ARGeoCoordinate.h */,
+				5AB3F0D418D217C700B78B07 /* ARGeoCoordinate.m */,
+				5AB3F0D518D217C700B78B07 /* ARKit.h */,
+				5AB3F0D618D217C700B78B07 /* ARKit.m */,
+				5AB3F0D718D217C700B78B07 /* ARLocationDelegate.h */,
+				5AB3F0D818D217C700B78B07 /* ARViewProtocol.h */,
+				5AB3F0D918D217C700B78B07 /* AugmentedRealityController.h */,
+				5AB3F0DA18D217C700B78B07 /* AugmentedRealityController.m */,
+				5AB3F0DB18D217C700B78B07 /* GEOLocations.h */,
+				5AB3F0DC18D217C700B78B07 /* GEOLocations.m */,
+			);
+			path = ARKit;
+			sourceTree = "<group>";
+		};
 		5AB7FCE218C395EF00C79354 /* GUI */ = {
 			isa = PBXGroup;
 			children = (
+				5AAADFB318CA5FD600897ABB /* Constants.h */,
+				5AAADFAD18CA5E9F00897ABB /* UploadImageViewController.h */,
+				5AAADFAE18CA5E9F00897ABB /* UploadImageViewController.m */,
+				5AAADFAF18CA5E9F00897ABB /* WallPicturesViewController.h */,
+				5AAADFB018CA5E9F00897ABB /* WallPicturesViewController.m */,
 				5A5519961888240F00718C48 /* AppDelegate.h */,
 				5A5519971888240F00718C48 /* AppDelegate.m */,
 				5A5519991888240F00718C48 /* Main.storyboard */,
@@ -274,6 +326,8 @@
 				5A2E084F18C6691400CC9822 /* RegisterViewController.m */,
 				5AA5AC8818C4FEEB00FAF513 /* FlipsideViewController.h */,
 				5AA5AC8918C4FEEB00FAF513 /* FlipsideViewController.m */,
+				5AB3F0E218D2240D00B78B07 /* MarkerView.h */,
+				5AB3F0E318D2240D00B78B07 /* MarkerView.m */,
 				5AA5AC8A18C4FEEB00FAF513 /* MainViewController.h */,
 				5AA5AC8B18C4FEEB00FAF513 /* MainViewController.m */,
 				7424137718C9F0430074C5A6 /* InitialViewController.h */,
@@ -435,27 +489,35 @@
 				5AA5AC9618C5331000FAF513 /* LogInViewController.m in Sources */,
 				5A5519E418882BD300718C48 /* Notification.m in Sources */,
 				5A5519E118882BC400718C48 /* Place.m in Sources */,
+				5AAADFB118CA5E9F00897ABB /* UploadImageViewController.m in Sources */,
 				5A5519E718882BF200718C48 /* LikeNotification.m in Sources */,
 				5AA5AC8D18C4FEEB00FAF513 /* MainViewController.m in Sources */,
 				5A5519F018882C3F00718C48 /* ApprovedFriendNotification.m in Sources */,
 				5AA5AC9318C51F7000FAF513 /* PlaceAnnotation.m in Sources */,
+				5AB3F0DD18D217C700B78B07 /* ARCoordinate.m in Sources */,
+				5AB3F0DF18D217C700B78B07 /* ARKit.m in Sources */,
 				5A5519DE18882B8400718C48 /* Photo.m in Sources */,
 				5A5519EA18882C0100718C48 /* CommentNotification.m in Sources */,
 				5A5519DB18882B7B00718C48 /* Fire.m in Sources */,
 				5A5519C3188829FF00718C48 /* User.m in Sources */,
 				5A5519D518882B4000718C48 /* Like.m in Sources */,
+				5AB3F0E018D217C700B78B07 /* AugmentedRealityController.m in Sources */,
 				5AA5AC8C18C4FEEB00FAF513 /* FlipsideViewController.m in Sources */,
 				5A5519981888240F00718C48 /* AppDelegate.m in Sources */,
 				5A5519D218882B3100718C48 /* Video.m in Sources */,
 				7424137918C9F0430074C5A6 /* InitialViewController.m in Sources */,
 				5A5519CC18882AD400718C48 /* Member.m in Sources */,
+				5AB3F0E118D217C700B78B07 /* GEOLocations.m in Sources */,
+				5AB3F0E418D2240D00B78B07 /* MarkerView.m in Sources */,
 				5A5519CF18882B1400718C48 /* Location.m in Sources */,
 				5AA5AC9018C50B4900FAF513 /* PlacesLoader.m in Sources */,
 				5A5519F318882C4A00718C48 /* WarningNotification.m in Sources */,
 				5A5519D818882B6B00718C48 /* Comment.m in Sources */,
 				5A5519C618882A4600718C48 /* Admin.m in Sources */,
+				5AB3F0DE18D217C700B78B07 /* ARGeoCoordinate.m in Sources */,
 				5A5519C918882A7F00718C48 /* Owner.m in Sources */,
 				5A2E085218C6691400CC9822 /* RegisterViewController.m in Sources */,
+				5AAADFB218CA5E9F00897ABB /* WallPicturesViewController.m in Sources */,
 				5A5519ED18882C2600718C48 /* RequestFriendshipNotification.m in Sources */,
 				5A5519941888240F00718C48 /* main.m in Sources */,
 			);
