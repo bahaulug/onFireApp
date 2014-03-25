@@ -437,6 +437,18 @@
                     <view key="view" contentMode="scaleToFill" id="fwq-Zx-1Io">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tg5-KE-NRg">
+                                <rect key="frame" x="137" y="227" width="43" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Fire In">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="vUq-wE-Lat" kind="push" id="Cvl-Jn-geN"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="home.png" id="7es-Gn-mWh" userLabel="Home" colorLabel="IBBuiltInLabel-Red"/>
@@ -445,6 +457,37 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nDK-Er-3Jx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4424" y="-879"/>
+        </scene>
+        <!--Record Video View Controller-->
+        <scene sceneID="4bh-GU-zTZ">
+            <objects>
+                <viewController id="vUq-wE-Lat" customClass="RecordVideoViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="96s-WO-esB"/>
+                        <viewControllerLayoutGuide type="bottom" id="MNE-8t-hih"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="clM-Hp-T5J">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hGT-uY-kwV">
+                                <rect key="frame" x="106" y="160" width="109" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Record The Fire">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="RecordAndPlay:" destination="vUq-wE-Lat" eventType="touchUpInside" id="pga-dw-d5a"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ISr-sg-7wI"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i1G-RB-YdM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4936" y="-879"/>
         </scene>
         <!--View Controller - Live-->
         <scene sceneID="1uQ-5X-bd0">
@@ -1096,6 +1139,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="JA9-a3-O4G"/>
+        <segue reference="Gi6-WC-mLn"/>
     </inferredMetricsTieBreakers>
 </document>
