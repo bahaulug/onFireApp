@@ -8,6 +8,9 @@
 
 #import "SettingsViewController.h"
 #import "Setting.h"
+#import "AccountSettingsViewController.h"
+#import "PrivacySettingsViewController.h"
+#import "NotificationSettingsViewController.h"
 
 @interface SettingsViewController ()
 
@@ -24,6 +27,11 @@
     return self;
 }
 
+- (void)viewDidAppear:(BOOL)animated
+{
+    [[self navigationController] setNavigationBarHidden:YES animated:YES];
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -34,9 +42,9 @@
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
-    //s[[self navigationController] setNavigationBarHidden:YES animated:YES];
+    [[self navigationController] setNavigationBarHidden:YES animated:YES];
     
-    _settings = [NSMutableArray arrayWithCapacity:3];
+    _settings = [NSMutableArray arrayWithCapacity:20];
     
     Setting *setting = [[Setting alloc] init];
     setting.type = @"Account Settings";
@@ -77,6 +85,25 @@
 
 #pragma mark - Table view data source
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (indexPath.row == 0)
+    {
+        AccountSettingsViewController *ASVC = [[AccountSettingsViewController alloc] init];
+        [[self navigationController] pushViewController:ASVC animated:YES];
+    }
+    else if (indexPath.row == 1)
+    {
+        PrivacySettingsViewController *PSVC = [[PrivacySettingsViewController alloc] init];
+        [[self navigationController] pushViewController:PSVC animated:YES];
+    }
+    else if (indexPath.row == 2)
+    {
+        NotificationSettingsViewController *NSVC = [[NotificationSettingsViewController alloc] init];
+        [[self navigationController] pushViewController:NSVC animated:YES];
+    }
+}
+
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
 #warning Potentially incomplete method implementation.
@@ -104,15 +131,6 @@
     }
     Setting *setting = (self.settings)[indexPath.row];
     cell.textLabel.text = [NSString stringWithFormat:setting.type];
-    
-    return cell;
-    
-   
-    
-    
-   
-    
-    
     
     return cell;
 }
