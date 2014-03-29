@@ -97,6 +97,8 @@
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
+   
+    
     if (cell == nil) {
         
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault
@@ -107,15 +109,20 @@
     
     return cell;
     
-   
-    
-    
-   
-    
-    
-    
-    return cell;
 }
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if(indexPath.row == 0)
+    {
+        [self performSegueWithIdentifier:@"Account Settings" sender:(self)];
+    }
+    else if(indexPath.row == 1)
+    {
+        [self performSegueWithIdentifier:@"Privacy Settings" sender:(self)];
+    }
+        
+}
+
 
 /*
 // Override to support conditional editing of the table view.
