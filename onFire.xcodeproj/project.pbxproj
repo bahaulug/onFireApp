@@ -759,7 +759,7 @@
 		74E6C16718DA3FDE00892FE8 /* batch-icons-webfont.woff in Resources */ = {isa = PBXBuildFile; fileRef = 74E6BEAF18DA3FDD00892FE8 /* batch-icons-webfont.woff */; };
 		74E6C16818DA3FDE00892FE8 /* batch_webfont_reference.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 74E6BEB018DA3FDD00892FE8 /* batch_webfont_reference.pdf */; };
 		74E6C16918DA3FDE00892FE8 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 74E6BEB118DA3FDD00892FE8 /* README.md */; };
-		74E6C17218DB79FE00892FE8 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74E6C17118DB79FE00892FE8 /* SettingsViewController.m */; };
+		74E6C17218DB79FE00892FE8 /* he.m in Sources */ = {isa = PBXBuildFile; fileRef = 74E6C17118DB79FE00892FE8 /* he.m */; };
 		74E6C17518DB7AB900892FE8 /* Setting.m in Sources */ = {isa = PBXBuildFile; fileRef = 74E6C17418DB7AB900892FE8 /* Setting.m */; };
 /* End PBXBuildFile section */
 
@@ -1566,7 +1566,7 @@
 		74E6BEB018DA3FDD00892FE8 /* batch_webfont_reference.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = batch_webfont_reference.pdf; sourceTree = "<group>"; };
 		74E6BEB118DA3FDD00892FE8 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		74E6C17018DB79FE00892FE8 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SettingsViewController.h; path = ../SettingsViewController.h; sourceTree = "<group>"; };
-		74E6C17118DB79FE00892FE8 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SettingsViewController.m; path = ../SettingsViewController.m; sourceTree = "<group>"; };
+		74E6C17118DB79FE00892FE8 /* he.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = he.m; path = ../he.m; sourceTree = "<group>"; };
 		74E6C17318DB7AB900892FE8 /* Setting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Setting.h; sourceTree = "<group>"; };
 		74E6C17418DB7AB900892FE8 /* Setting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Setting.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -1720,7 +1720,7 @@
 				5A5519971888240F00718C48 /* AppDelegate.m */,
 				5A5519991888240F00718C48 /* Main.storyboard */,
 				74E6C17018DB79FE00892FE8 /* SettingsViewController.h */,
-				74E6C17118DB79FE00892FE8 /* SettingsViewController.m */,
+				74E6C17118DB79FE00892FE8 /* he.m */,
 				74E6C17318DB7AB900892FE8 /* Setting.h */,
 				74E6C17418DB7AB900892FE8 /* Setting.m */,
 				5AA5AC9418C5331000FAF513 /* LogInViewController.h */,
@@ -3372,7 +3372,7 @@
 				5A5519F318882C4A00718C48 /* WarningNotification.m in Sources */,
 				74E6C17518DB7AB900892FE8 /* Setting.m in Sources */,
 				5A5519D818882B6B00718C48 /* Comment.m in Sources */,
-				74E6C17218DB79FE00892FE8 /* SettingsViewController.m in Sources */,
+				74E6C17218DB79FE00892FE8 /* he.m in Sources */,
 				5A5519C618882A4600718C48 /* Admin.m in Sources */,
 				5AB3F0DE18D217C700B78B07 /* ARGeoCoordinate.m in Sources */,
 				5A5519C918882A7F00718C48 /* Owner.m in Sources */,

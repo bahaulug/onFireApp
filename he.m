@@ -120,6 +120,26 @@
     {
         [self performSegueWithIdentifier:@"Privacy Settings" sender:(self)];
     }
+    else if(indexPath.row == 2)
+    {
+        [self performSegueWithIdentifier:@"Notification Settings" sender:(self)];
+    }
+    else if(indexPath.row == 3)
+    {
+        [self performSegueWithIdentifier:@"Help" sender:(self)];
+    }
+    else if(indexPath.row == 4)
+    {
+        [self performSegueWithIdentifier:@"User Terms" sender:(self)];
+    }
+    else if(indexPath.row == 5)
+    {
+        [self performSegueWithIdentifier:@"Privacy Policy" sender:(self)];
+    }
+    else if(indexPath.row == 6)
+    {
+        [self performSegueWithIdentifier:@"About" sender:(self)];
+    }
         
 }
 
