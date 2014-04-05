@@ -26,9 +26,7 @@
 @synthesize email;
 @synthesize password;
 @synthesize gender;
-@synthesize birthDay;
-@synthesize birthMonth;
-@synthesize birthYear;
+@synthesize birthday;
 @synthesize notifications;
 
 @end

@@ -6,7 +6,7 @@
 //  Copyright (c) 2013 Jean-Pierre Distler. All rights reserved.
 //
 
-#import "FlipsideViewController.h"
+#import "CameraViewController.h"
 #import "Place.h"
 #import "MarkerView.h"
 #import "PlacesLoader.h"
@@ -16,14 +16,14 @@ NSString * const kWebsiteKey = @"website";
 
 const int kInfoViewTag = 1001;
 
-@interface FlipsideViewController () <MarkerViewDelegate>
+@interface CameraViewController () <MarkerViewDelegate>
 
 @property (nonatomic, strong) AugmentedRealityController *arController;
 @property (nonatomic, strong) NSMutableArray *geoLocations;
 
 @end
 
-@implementation FlipsideViewController
+@implementation CameraViewController
 
 - (void)viewDidLoad
 {
@@ -74,7 +74,7 @@ const int kInfoViewTag = 1001;
 
 - (IBAction)done:(id)sender
 {
-    [self.delegate flipsideViewControllerDidFinish:self];
+    [self.delegate cameraViewControllerDidFinish:self];
 }
 
 -(void) didUpdateHeading:(CLHeading *)newHeading{

@@ -37,9 +37,11 @@
 		5A5519ED18882C2600718C48 /* RequestFriendshipNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A5519EC18882C2600718C48 /* RequestFriendshipNotification.m */; };
 		5A5519F018882C3F00718C48 /* ApprovedFriendNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A5519EF18882C3F00718C48 /* ApprovedFriendNotification.m */; };
 		5A5519F318882C4A00718C48 /* WarningNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A5519F218882C4A00718C48 /* WarningNotification.m */; };
+		5AA55DBD18EC2374001D8888 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AA55DBC18EC2374001D8888 /* HomeViewController.m */; };
+		5AA5612718F02B7F0089AE6D /* LiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AA5612618F02B7F0089AE6D /* LiveViewController.m */; };
 		5AA5AC8718C4FC4800FAF513 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AA5AC8618C4FC4800FAF513 /* AVFoundation.framework */; };
-		5AA5AC8C18C4FEEB00FAF513 /* FlipsideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AA5AC8918C4FEEB00FAF513 /* FlipsideViewController.m */; };
-		5AA5AC8D18C4FEEB00FAF513 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AA5AC8B18C4FEEB00FAF513 /* MainViewController.m */; };
+		5AA5AC8C18C4FEEB00FAF513 /* CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AA5AC8918C4FEEB00FAF513 /* CameraViewController.m */; };
+		5AA5AC8D18C4FEEB00FAF513 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AA5AC8B18C4FEEB00FAF513 /* MapViewController.m */; };
 		5AA5AC9018C50B4900FAF513 /* PlacesLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AA5AC8F18C50B4900FAF513 /* PlacesLoader.m */; };
 		5AA5AC9318C51F7000FAF513 /* PlaceAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AA5AC9218C51F7000FAF513 /* PlaceAnnotation.m */; };
 		5AA5AC9618C5331000FAF513 /* LogInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AA5AC9518C5331000FAF513 /* LogInViewController.m */; };
@@ -834,11 +836,15 @@
 		5A5519EF18882C3F00718C48 /* ApprovedFriendNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApprovedFriendNotification.m; sourceTree = "<group>"; };
 		5A5519F118882C4A00718C48 /* WarningNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WarningNotification.h; sourceTree = "<group>"; };
 		5A5519F218882C4A00718C48 /* WarningNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WarningNotification.m; sourceTree = "<group>"; };
+		5AA55DBB18EC2374001D8888 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		5AA55DBC18EC2374001D8888 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		5AA5612518F02B7F0089AE6D /* LiveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LiveViewController.h; sourceTree = "<group>"; };
+		5AA5612618F02B7F0089AE6D /* LiveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LiveViewController.m; sourceTree = "<group>"; };
 		5AA5AC8618C4FC4800FAF513 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		5AA5AC8818C4FEEB00FAF513 /* FlipsideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlipsideViewController.h; sourceTree = "<group>"; };
-		5AA5AC8918C4FEEB00FAF513 /* FlipsideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlipsideViewController.m; sourceTree = "<group>"; };
-		5AA5AC8A18C4FEEB00FAF513 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
-		5AA5AC8B18C4FEEB00FAF513 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		5AA5AC8818C4FEEB00FAF513 /* CameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraViewController.h; sourceTree = "<group>"; };
+		5AA5AC8918C4FEEB00FAF513 /* CameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraViewController.m; sourceTree = "<group>"; };
+		5AA5AC8A18C4FEEB00FAF513 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		5AA5AC8B18C4FEEB00FAF513 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		5AA5AC8E18C50B4900FAF513 /* PlacesLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlacesLoader.h; sourceTree = "<group>"; };
 		5AA5AC8F18C50B4900FAF513 /* PlacesLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlacesLoader.m; sourceTree = "<group>"; };
 		5AA5AC9118C51F6F00FAF513 /* PlaceAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaceAnnotation.h; sourceTree = "<group>"; };
@@ -1707,6 +1713,91 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		5AA55DB418EC16A4001D8888 /* Initialization */ = {
+			isa = PBXGroup;
+			children = (
+				5AA5AC9418C5331000FAF513 /* LogInViewController.h */,
+				5AA5AC9518C5331000FAF513 /* LogInViewController.m */,
+				5A2E084E18C6691400CC9822 /* RegisterViewController.h */,
+				5A2E084F18C6691400CC9822 /* RegisterViewController.m */,
+				7424137718C9F0430074C5A6 /* InitialViewController.h */,
+				7424137818C9F0430074C5A6 /* InitialViewController.m */,
+			);
+			name = Initialization;
+			sourceTree = "<group>";
+		};
+		5AA55DB518EC16CE001D8888 /* TabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				5AA55DB618EC1852001D8888 /* Home */,
+				5AA55DBA18EC18CC001D8888 /* Live */,
+				5AA55DB918EC18C1001D8888 /* Nearby */,
+				5AA55DB818EC1865001D8888 /* Profile */,
+				5AA55DB718EC1859001D8888 /* Settings */,
+			);
+			name = TabBarController;
+			sourceTree = "<group>";
+		};
+		5AA55DB618EC1852001D8888 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				5AA55DBB18EC2374001D8888 /* HomeViewController.h */,
+				5AA55DBC18EC2374001D8888 /* HomeViewController.m */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		5AA55DB718EC1859001D8888 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				74E6C17018DB79FE00892FE8 /* SettingsViewController.h */,
+				74E6C17118DB79FE00892FE8 /* SettingsViewController.m */,
+				74E6C17318DB7AB900892FE8 /* Setting.h */,
+				74E6C17418DB7AB900892FE8 /* Setting.m */,
+				5ADB4C1618E2F448006F07B0 /* AccountSettingsViewController.h */,
+				5ADB4C1718E2F448006F07B0 /* AccountSettingsViewController.m */,
+				5ADB4C1818E2F448006F07B0 /* AccountSettingsViewController.xib */,
+				5ADB4C1B18E2F462006F07B0 /* PrivacySettingsViewController.h */,
+				5ADB4C1C18E2F462006F07B0 /* PrivacySettingsViewController.m */,
+				5ADB4C1D18E2F462006F07B0 /* PrivacySettingsViewController.xib */,
+				5ADB4C2018E2F475006F07B0 /* NotificationSettingsViewController.h */,
+				5ADB4C2118E2F475006F07B0 /* NotificationSettingsViewController.m */,
+				5ADB4C2218E2F475006F07B0 /* NotificationSettingsViewController.xib */,
+			);
+			name = Settings;
+			sourceTree = "<group>";
+		};
+		5AA55DB818EC1865001D8888 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				5ADB4C2518E2FB41006F07B0 /* ProfileViewController.h */,
+				5ADB4C2618E2FB41006F07B0 /* ProfileViewController.m */,
+			);
+			name = Profile;
+			sourceTree = "<group>";
+		};
+		5AA55DB918EC18C1001D8888 /* Nearby */ = {
+			isa = PBXGroup;
+			children = (
+				5AA5AC8A18C4FEEB00FAF513 /* MapViewController.h */,
+				5AA5AC8B18C4FEEB00FAF513 /* MapViewController.m */,
+				5AA5AC8818C4FEEB00FAF513 /* CameraViewController.h */,
+				5AA5AC8918C4FEEB00FAF513 /* CameraViewController.m */,
+				5AB3F0E218D2240D00B78B07 /* MarkerView.h */,
+				5AB3F0E318D2240D00B78B07 /* MarkerView.m */,
+			);
+			name = Nearby;
+			sourceTree = "<group>";
+		};
+		5AA55DBA18EC18CC001D8888 /* Live */ = {
+			isa = PBXGroup;
+			children = (
+				5AA5612518F02B7F0089AE6D /* LiveViewController.h */,
+				5AA5612618F02B7F0089AE6D /* LiveViewController.m */,
+			);
+			name = Live;
+			sourceTree = "<group>";
+		};
 		5AB3F0D018D217C700B78B07 /* ARKit */ = {
 			isa = PBXGroup;
 			children = (
@@ -1729,6 +1820,9 @@
 		5AB7FCE218C395EF00C79354 /* GUI */ = {
 			isa = PBXGroup;
 			children = (
+				5AA55DB518EC16CE001D8888 /* TabBarController */,
+				5AA55DB418EC16A4001D8888 /* Initialization */,
+				5A5519991888240F00718C48 /* Main.storyboard */,
 				5AAADFB318CA5FD600897ABB /* Constants.h */,
 				5AAADFAD18CA5E9F00897ABB /* UploadImageViewController.h */,
 				5AAADFAE18CA5E9F00897ABB /* UploadImageViewController.m */,
@@ -1736,34 +1830,6 @@
 				5AAADFB018CA5E9F00897ABB /* WallPicturesViewController.m */,
 				5A5519961888240F00718C48 /* AppDelegate.h */,
 				5A5519971888240F00718C48 /* AppDelegate.m */,
-				5A5519991888240F00718C48 /* Main.storyboard */,
-				5ADB4C2518E2FB41006F07B0 /* ProfileViewController.h */,
-				5ADB4C2618E2FB41006F07B0 /* ProfileViewController.m */,
-				74E6C17018DB79FE00892FE8 /* SettingsViewController.h */,
-				74E6C17118DB79FE00892FE8 /* SettingsViewController.m */,
-				74E6C17318DB7AB900892FE8 /* Setting.h */,
-				74E6C17418DB7AB900892FE8 /* Setting.m */,
-				5AA5AC9418C5331000FAF513 /* LogInViewController.h */,
-				5AA5AC9518C5331000FAF513 /* LogInViewController.m */,
-				5A2E084E18C6691400CC9822 /* RegisterViewController.h */,
-				5A2E084F18C6691400CC9822 /* RegisterViewController.m */,
-				5AA5AC8818C4FEEB00FAF513 /* FlipsideViewController.h */,
-				5AA5AC8918C4FEEB00FAF513 /* FlipsideViewController.m */,
-				5AB3F0E218D2240D00B78B07 /* MarkerView.h */,
-				5AB3F0E318D2240D00B78B07 /* MarkerView.m */,
-				5AA5AC8A18C4FEEB00FAF513 /* MainViewController.h */,
-				5AA5AC8B18C4FEEB00FAF513 /* MainViewController.m */,
-				7424137718C9F0430074C5A6 /* InitialViewController.h */,
-				7424137818C9F0430074C5A6 /* InitialViewController.m */,
-				5ADB4C1618E2F448006F07B0 /* AccountSettingsViewController.h */,
-				5ADB4C1718E2F448006F07B0 /* AccountSettingsViewController.m */,
-				5ADB4C1818E2F448006F07B0 /* AccountSettingsViewController.xib */,
-				5ADB4C1B18E2F462006F07B0 /* PrivacySettingsViewController.h */,
-				5ADB4C1C18E2F462006F07B0 /* PrivacySettingsViewController.m */,
-				5ADB4C1D18E2F462006F07B0 /* PrivacySettingsViewController.xib */,
-				5ADB4C2018E2F475006F07B0 /* NotificationSettingsViewController.h */,
-				5ADB4C2118E2F475006F07B0 /* NotificationSettingsViewController.m */,
-				5ADB4C2218E2F475006F07B0 /* NotificationSettingsViewController.xib */,
 			);
 			name = GUI;
 			sourceTree = "<group>";
@@ -3381,7 +3447,8 @@
 				5A5519E118882BC400718C48 /* Place.m in Sources */,
 				5AAADFB118CA5E9F00897ABB /* UploadImageViewController.m in Sources */,
 				5A5519E718882BF200718C48 /* LikeNotification.m in Sources */,
-				5AA5AC8D18C4FEEB00FAF513 /* MainViewController.m in Sources */,
+				5AA5AC8D18C4FEEB00FAF513 /* MapViewController.m in Sources */,
+				5AA5612718F02B7F0089AE6D /* LiveViewController.m in Sources */,
 				5A5519F018882C3F00718C48 /* ApprovedFriendNotification.m in Sources */,
 				5AA5AC9318C51F7000FAF513 /* PlaceAnnotation.m in Sources */,
 				5AB3F0DD18D217C700B78B07 /* ARCoordinate.m in Sources */,
@@ -3394,7 +3461,7 @@
 				5ADB4C1918E2F448006F07B0 /* AccountSettingsViewController.m in Sources */,
 				5A5519D518882B4000718C48 /* Like.m in Sources */,
 				5AB3F0E018D217C700B78B07 /* AugmentedRealityController.m in Sources */,
-				5AA5AC8C18C4FEEB00FAF513 /* FlipsideViewController.m in Sources */,
+				5AA5AC8C18C4FEEB00FAF513 /* CameraViewController.m in Sources */,
 				5A5519981888240F00718C48 /* AppDelegate.m in Sources */,
 				5A5519D218882B3100718C48 /* Video.m in Sources */,
 				7424137918C9F0430074C5A6 /* InitialViewController.m in Sources */,
@@ -3403,6 +3470,7 @@
 				5AB3F0E418D2240D00B78B07 /* MarkerView.m in Sources */,
 				5A5519CF18882B1400718C48 /* Location.m in Sources */,
 				5AA5AC9018C50B4900FAF513 /* PlacesLoader.m in Sources */,
+				5AA55DBD18EC2374001D8888 /* HomeViewController.m in Sources */,
 				5A5519F318882C4A00718C48 /* WarningNotification.m in Sources */,
 				74E6C17518DB7AB900892FE8 /* Setting.m in Sources */,
 				5A5519D818882B6B00718C48 /* Comment.m in Sources */,

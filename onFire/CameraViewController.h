@@ -10,15 +10,15 @@
 #import <MapKit/MapKit.h>
 #import "ARKit.h"
 
-@class FlipsideViewController;
+@class CameraViewController;
 
-@protocol FlipsideViewControllerDelegate
-- (void)flipsideViewControllerDidFinish:(FlipsideViewController *)controller;
+@protocol CameraViewControllerDelegate
+- (void)cameraViewControllerDidFinish:(CameraViewController *)controller;
 @end
 
-@interface FlipsideViewController : UIViewController <ARLocationDelegate, ARDelegate, ARMarkerDelegate>
+@interface CameraViewController : UIViewController <ARLocationDelegate, ARDelegate, ARMarkerDelegate>
 
-@property (weak, nonatomic) id <FlipsideViewControllerDelegate> delegate;
+@property (weak, nonatomic) id <CameraViewControllerDelegate> delegate;
 @property (nonatomic, strong) NSArray *locations;
 @property (nonatomic, strong) MKUserLocation *userLocation;
 

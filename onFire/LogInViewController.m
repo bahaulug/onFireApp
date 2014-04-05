@@ -43,9 +43,9 @@
     
     PFUser *user = [PFUser currentUser];
     // Tester id
-    // Email: admin
+    // Email: admin@admin.com
     // Password: admin
-    self.emailTextField.text = @"admin";
+    self.emailTextField.text = @"admin@admin.com";
     self.passwordTextField.text = @"admin";
 }
 

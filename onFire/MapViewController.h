@@ -6,9 +6,9 @@
 //  Copyright (c) 2013 Jean-Pierre Distler. All rights reserved.
 //
 
-#import "FlipsideViewController.h"
+#import "CameraViewController.h"
 
-@interface MainViewController : UIViewController <FlipsideViewControllerDelegate>
+@interface MapViewController : UIViewController <CameraViewControllerDelegate>
 
 -(IBAction)xTabButtonPressed:(id)sender;
 

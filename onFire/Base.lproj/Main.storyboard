@@ -74,10 +74,10 @@
             </objects>
             <point key="canvasLocation" x="1191" y="-393"/>
         </scene>
-        <!--Main View Controller - Map-->
+        <!--Map View Controller - Map-->
         <scene sceneID="6FA-I5-LRv">
             <objects>
-                <viewController title="Map" id="6aC-WN-8bs" customClass="MainViewController" sceneMemberID="viewController">
+                <viewController title="Map" id="6aC-WN-8bs" customClass="MapViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="zET-C4-2dW"/>
                         <viewControllerLayoutGuide type="bottom" id="cnm-kK-jhw"/>
@@ -156,10 +156,10 @@
             </objects>
             <point key="canvasLocation" x="2325" y="-442"/>
         </scene>
-        <!--Flipside View Controller-->
+        <!--Camera View Controller-->
         <scene sceneID="VrT-lz-P6b">
             <objects>
-                <viewController id="Nm2-gO-vUS" customClass="FlipsideViewController" sceneMemberID="viewController">
+                <viewController id="Nm2-gO-vUS" customClass="CameraViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ZGX-Lg-Ctn"/>
                         <viewControllerLayoutGuide type="bottom" id="VtF-cy-doC"/>
@@ -532,10 +532,10 @@
             </objects>
             <point key="canvasLocation" x="3888" y="177"/>
         </scene>
-        <!--View Controller - Nearby-->
+        <!--Map View Controller - Nearby-->
         <scene sceneID="WNg-yr-wzb">
             <objects>
-                <viewController id="PaC-lD-bXZ" sceneMemberID="viewController">
+                <viewController id="PaC-lD-bXZ" customClass="MapViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Gtr-xH-s4q"/>
                         <viewControllerLayoutGuide type="bottom" id="BdP-TK-pIc"/>
@@ -544,10 +544,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="qrZ-VX-IU2">
-                                <rect key="frame" x="150" y="230" width="20" height="20"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </activityIndicatorView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iYI-ON-y1Q">
                                 <rect key="frame" x="46" y="75" width="99" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -558,10 +554,57 @@
                                     <segue destination="6aC-WN-8bs" kind="modal" id="BAJ-66-9xE"/>
                                 </connections>
                             </button>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rGF-Oq-Nb0">
+                                <rect key="frame" x="0.0" y="68" width="320" height="500"/>
+                                <connections>
+                                    <outlet property="delegate" destination="PaC-lD-bXZ" id="Rua-Uq-BcW"/>
+                                </connections>
+                            </mapView>
+                            <button opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PIQ-P5-G2F">
+                                <rect key="frame" x="234" y="482" width="86" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" size="button"/>
+                                <state key="normal" title="Camera">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Nm2-gO-vUS" kind="modal" identifier="showAlternate" id="gvT-0t-V4M"/>
+                                </connections>
+                            </button>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eIM-IZ-p9L">
+                                <rect key="frame" x="0.0" y="24" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem title="X" id="odm-aP-0Nm">
+                                        <connections>
+                                            <action selector="xTabButtonPressed:" destination="PaC-lD-bXZ" id="MMj-Eb-t4I"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="62" style="plain" systemItem="fixedSpace" id="a9z-Kn-651"/>
+                                    <barButtonItem style="plain" id="orM-j7-IDR">
+                                        <segmentedControl key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="mZz-If-48K">
+                                            <rect key="frame" x="100" y="7" width="117" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <segments>
+                                                <segment title="L"/>
+                                                <segment title="M"/>
+                                                <segment title="C"/>
+                                            </segments>
+                                        </segmentedControl>
+                                    </barButtonItem>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="nIO-zX-INd"/>
+                                    <barButtonItem title="Filter" id="pKE-KR-cL5"/>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Nearby" image="cloud-add-2.png" id="jag-J0-th6"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="mapView" destination="rGF-Oq-Nb0" id="qhJ-NY-1VO"/>
+                        <segue destination="mxN-8e-UhE" kind="modal" identifier="Logout" id="eZn-Av-5Qe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rMm-x1-MY3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -649,7 +692,7 @@
                                     <segue destination="7BO-NI-t1Q" kind="push" id="XJD-M1-v2z"/>
                                 </connections>
                             </button>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="PDo-9P-qJ3">
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="PDo-9P-qJ3">
                                 <rect key="frame" x="20" y="204" width="280" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
@@ -658,7 +701,7 @@
                                     <segment title="Places"/>
                                 </segments>
                             </segmentedControl>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="9Ap-GM-cRo">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="9Ap-GM-cRo">
                                 <rect key="frame" x="0.0" y="233" width="320" height="284"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1133,6 +1176,8 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="JA9-a3-O4G"/>
+        <segue reference="eZn-Av-5Qe"/>
+        <segue reference="Gi6-WC-mLn"/>
+        <segue reference="gvT-0t-V4M"/>
     </inferredMetricsTieBreakers>
 </document>

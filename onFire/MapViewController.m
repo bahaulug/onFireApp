@@ -6,7 +6,7 @@
 //  Copyright (c) 2013 Jean-Pierre Distler. All rights reserved.
 //
 
-#import "MainViewController.h"
+#import "MapViewController.h"
 #import <MapKit/MapKit.h>
 #import <CoreLocation/CoreLocation.h>
 #import "PlacesLoader.h"
@@ -20,7 +20,7 @@ NSString * const kAddressKey = @"vicinity";
 NSString * const klatitudeKeypath = @"geometry.location.lat";
 NSString * const klongitudeKeypath = @"geometry.location.lng";
 
-@interface MainViewController () <CLLocationManagerDelegate, MKMapViewDelegate>
+@interface MapViewController () <CLLocationManagerDelegate, MKMapViewDelegate>
 
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;
 @property (nonatomic, strong) CLLocationManager *locationManager;
@@ -28,7 +28,7 @@ NSString * const klongitudeKeypath = @"geometry.location.lng";
 
 @end
 
-@implementation MainViewController
+@implementation MapViewController
 
 - (void)viewDidLoad
 {
@@ -99,7 +99,7 @@ NSString * const klongitudeKeypath = @"geometry.location.lng";
 
 #pragma mark - Flipside View
 
-- (void)flipsideViewControllerDidFinish:(FlipsideViewController *)controller
+- (void)cameraViewControllerDidFinish:(CameraViewController *)controller
 {
     [self dismissViewControllerAnimated:YES completion:nil];
 }

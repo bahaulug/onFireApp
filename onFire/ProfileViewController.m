@@ -28,11 +28,25 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    
     PFUser *user = [PFUser currentUser];
     _friends = [user objectForKey:@"friends"];
     for (int i = 0; i<_friends.count; i++) {
         NSLog(@"%@", _friends[i]);
     }
+    PFObject *a = [PFObject objectWithClassName:@"a"];
+    [a addObject:user.username forKey:@"aaa"];
+    [a addObject:user forKey:@"aaaa"];
+    
+    [a saveInBackground];
+    
+    NSMutableArray *aaa = [a objectForKey:@"aaaa"];
+    for (int i = 0; i<aaa.count; i++) {
+        NSLog(@"%@", aaa[i]);
+    }
+    
+    PFUser * aa = (PFUser*)aaa[0];
+    NSLog(aa.username);
 }
 
 - (void)didReceiveMemoryWarning
