@@ -106,6 +106,7 @@
     
     //Place the image in the imageview
     self.imgToUpload.image = img;
+    //self.imgToUpload.image.imageOrientation = i
 }
 
 #pragma mark IB Actions

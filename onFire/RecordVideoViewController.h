@@ -16,5 +16,6 @@
 -(BOOL)startCameraControllerFromViewController:(UIViewController*)controller
                                  usingDelegate:(id )delegate;
 -(void)video:(NSString *)videoPath didFinishSavingWithError:(NSError *)error contextInfo:(void*)contextInfo;
+@property (nonatomic, strong) NSDictionary* settings;
 
 @end

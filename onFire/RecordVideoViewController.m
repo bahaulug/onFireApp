@@ -58,7 +58,9 @@
     cameraUI.mediaTypes = [[NSArray alloc] initWithObjects:(NSString *)kUTTypeMovie, nil];
     // Hides the controls for moving & scaling pictures, or for
     // trimming movies. To instead show the controls, use YES.
-    cameraUI.allowsEditing = NO;
+    cameraUI.videoMaximumDuration = 10.0f;
+    cameraUI.allowsEditing = YES;
+    cameraUI.videoQuality = UIImagePickerControllerQualityTypeMedium;
     cameraUI.delegate = delegate;
     // 3 - Display image picker
     [controller presentModalViewController: cameraUI animated: YES];
