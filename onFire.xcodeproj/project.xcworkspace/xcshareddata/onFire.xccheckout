@@ -5,36 +5,36 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>4392B74B-BA34-4414-8518-C24956F375FA</string>
+	<string>AC1D55FF-5970-46FC-A336-15758E15C726</string>
 	<key>IDESourceControlProjectName</key>
 	<string>onFire</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>E21DECE5-7F7C-475C-85BA-1B9B2C9C12B8</key>
-		<string>https://github.com/bahaulug/onFireApp.git</string>
+		<key>1D214B20-CFE0-4A97-A7BA-78CC5296BEFD</key>
+		<string>https://github.com/berkinsansal/onFireApp.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>onFire.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>E21DECE5-7F7C-475C-85BA-1B9B2C9C12B8</key>
+		<key>1D214B20-CFE0-4A97-A7BA-78CC5296BEFD</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/bahaulug/onFireApp.git</string>
+	<string>https://github.com/berkinsansal/onFireApp.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>E21DECE5-7F7C-475C-85BA-1B9B2C9C12B8</string>
+	<string>1D214B20-CFE0-4A97-A7BA-78CC5296BEFD</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>E21DECE5-7F7C-475C-85BA-1B9B2C9C12B8</string>
+			<string>1D214B20-CFE0-4A97-A7BA-78CC5296BEFD</string>
 			<key>IDESourceControlWCCName</key>
-			<string>onFireApp</string>
+			<string>onFire</string>
 		</dict>
 	</array>
 </dict>

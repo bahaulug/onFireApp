@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1483D7D918F4983600A00609 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1483D7D818F4983600A00609 /* Parse.framework */; };
+		1483D7DC18F5556200A00609 /* ParseInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 1483D7DB18F5556200A00609 /* ParseInfo.m */; };
+		1483D7DF18F559DB00A00609 /* UserProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1483D7DE18F559DB00A00609 /* UserProfileViewController.m */; };
+		1483D7E118F562EF00A00609 /* UserProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1483D7E018F562EF00A00609 /* UserProfileViewController.xib */; };
 		5A2E085218C6691400CC9822 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A2E084F18C6691400CC9822 /* RegisterViewController.m */; };
 		5A5519881888240F00718C48 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A5519871888240F00718C48 /* Foundation.framework */; };
 		5A55198C1888240F00718C48 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A55198B1888240F00718C48 /* UIKit.framework */; };
@@ -63,14 +67,7 @@
 		5AB7FD0618C3A31C00C79354 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AB7FD0118C3A31C00C79354 /* Security.framework */; };
 		5AB7FD0718C3A31C00C79354 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AB7FD0218C3A31C00C79354 /* StoreKit.framework */; };
 		5AB7FD0818C3A31C00C79354 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AB7FD0318C3A31C00C79354 /* SystemConfiguration.framework */; };
-		5ADB4C1918E2F448006F07B0 /* AccountSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADB4C1718E2F448006F07B0 /* AccountSettingsViewController.m */; };
-		5ADB4C1A18E2F448006F07B0 /* AccountSettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5ADB4C1818E2F448006F07B0 /* AccountSettingsViewController.xib */; };
-		5ADB4C1E18E2F462006F07B0 /* PrivacySettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADB4C1C18E2F462006F07B0 /* PrivacySettingsViewController.m */; };
-		5ADB4C1F18E2F462006F07B0 /* PrivacySettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5ADB4C1D18E2F462006F07B0 /* PrivacySettingsViewController.xib */; };
-		5ADB4C2318E2F475006F07B0 /* NotificationSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADB4C2118E2F475006F07B0 /* NotificationSettingsViewController.m */; };
-		5ADB4C2418E2F475006F07B0 /* NotificationSettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5ADB4C2218E2F475006F07B0 /* NotificationSettingsViewController.xib */; };
 		5ADB4C2718E2FB41006F07B0 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADB4C2618E2FB41006F07B0 /* ProfileViewController.m */; };
-		7424137618C9D65D0074C5A6 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7424137518C9D65D0074C5A6 /* Parse.framework */; };
 		7424137918C9F0430074C5A6 /* InitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7424137818C9F0430074C5A6 /* InitialViewController.m */; };
 		74E6BEB218DA3FDD00892FE8 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 74E6BBF318DA3FD400892FE8 /* .gitignore */; };
 		74E6BEB318DA3FDD00892FE8 /* License.txt in Resources */ = {isa = PBXBuildFile; fileRef = 74E6BBF418DA3FD400892FE8 /* License.txt */; };
@@ -783,6 +780,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1483D7D818F4983600A00609 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		1483D7DA18F5556200A00609 /* ParseInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParseInfo.h; sourceTree = "<group>"; };
+		1483D7DB18F5556200A00609 /* ParseInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParseInfo.m; sourceTree = "<group>"; };
+		1483D7DD18F559DB00A00609 /* UserProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserProfileViewController.h; sourceTree = "<group>"; };
+		1483D7DE18F559DB00A00609 /* UserProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserProfileViewController.m; sourceTree = "<group>"; };
+		1483D7E018F562EF00A00609 /* UserProfileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserProfileViewController.xib; sourceTree = "<group>"; };
 		5A2E084E18C6691400CC9822 /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
 		5A2E084F18C6691400CC9822 /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
 		5A5519841888240F00718C48 /* onFire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = onFire.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -879,18 +882,8 @@
 		5AB7FD0118C3A31C00C79354 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		5AB7FD0218C3A31C00C79354 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		5AB7FD0318C3A31C00C79354 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		5ADB4C1618E2F448006F07B0 /* AccountSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountSettingsViewController.h; sourceTree = "<group>"; };
-		5ADB4C1718E2F448006F07B0 /* AccountSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountSettingsViewController.m; sourceTree = "<group>"; };
-		5ADB4C1818E2F448006F07B0 /* AccountSettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AccountSettingsViewController.xib; sourceTree = "<group>"; };
-		5ADB4C1B18E2F462006F07B0 /* PrivacySettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrivacySettingsViewController.h; sourceTree = "<group>"; };
-		5ADB4C1C18E2F462006F07B0 /* PrivacySettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrivacySettingsViewController.m; sourceTree = "<group>"; };
-		5ADB4C1D18E2F462006F07B0 /* PrivacySettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PrivacySettingsViewController.xib; sourceTree = "<group>"; };
-		5ADB4C2018E2F475006F07B0 /* NotificationSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationSettingsViewController.h; sourceTree = "<group>"; };
-		5ADB4C2118E2F475006F07B0 /* NotificationSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationSettingsViewController.m; sourceTree = "<group>"; };
-		5ADB4C2218E2F475006F07B0 /* NotificationSettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NotificationSettingsViewController.xib; sourceTree = "<group>"; };
 		5ADB4C2518E2FB41006F07B0 /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
 		5ADB4C2618E2FB41006F07B0 /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
-		7424137518C9D65D0074C5A6 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		7424137718C9F0430074C5A6 /* InitialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InitialViewController.h; sourceTree = "<group>"; };
 		7424137818C9F0430074C5A6 /* InitialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InitialViewController.m; sourceTree = "<group>"; };
 		74E6BBF318DA3FD400892FE8 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
@@ -1600,7 +1593,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7424137618C9D65D0074C5A6 /* Parse.framework in Frameworks */,
+				1483D7D918F4983600A00609 /* Parse.framework in Frameworks */,
 				5AA5AC8718C4FC4800FAF513 /* AVFoundation.framework in Frameworks */,
 				5AB7FD0418C3A31C00C79354 /* MobileCoreServices.framework in Frameworks */,
 				5AB7FD0518C3A31C00C79354 /* QuartzCore.framework in Frameworks */,
@@ -1652,7 +1645,7 @@
 		5A5519861888240F00718C48 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				7424137518C9D65D0074C5A6 /* Parse.framework */,
+				1483D7D818F4983600A00609 /* Parse.framework */,
 				5AA5AC8618C4FC4800FAF513 /* AVFoundation.framework */,
 				5AB7FCFF18C3A31C00C79354 /* MobileCoreServices.framework */,
 				5AB7FD0018C3A31C00C79354 /* QuartzCore.framework */,
@@ -1680,6 +1673,8 @@
 				5A5519A21888240F00718C48 /* Images.xcassets */,
 				74E6BBF218DA3FD400892FE8 /* icons */,
 				5A55198E1888240F00718C48 /* Supporting Files */,
+				1483D7DA18F5556200A00609 /* ParseInfo.h */,
+				1483D7DB18F5556200A00609 /* ParseInfo.m */,
 			);
 			path = onFire;
 			sourceTree = "<group>";
@@ -1754,15 +1749,6 @@
 				74E6C17118DB79FE00892FE8 /* SettingsViewController.m */,
 				74E6C17318DB7AB900892FE8 /* Setting.h */,
 				74E6C17418DB7AB900892FE8 /* Setting.m */,
-				5ADB4C1618E2F448006F07B0 /* AccountSettingsViewController.h */,
-				5ADB4C1718E2F448006F07B0 /* AccountSettingsViewController.m */,
-				5ADB4C1818E2F448006F07B0 /* AccountSettingsViewController.xib */,
-				5ADB4C1B18E2F462006F07B0 /* PrivacySettingsViewController.h */,
-				5ADB4C1C18E2F462006F07B0 /* PrivacySettingsViewController.m */,
-				5ADB4C1D18E2F462006F07B0 /* PrivacySettingsViewController.xib */,
-				5ADB4C2018E2F475006F07B0 /* NotificationSettingsViewController.h */,
-				5ADB4C2118E2F475006F07B0 /* NotificationSettingsViewController.m */,
-				5ADB4C2218E2F475006F07B0 /* NotificationSettingsViewController.xib */,
 			);
 			name = Settings;
 			sourceTree = "<group>";
@@ -1830,6 +1816,9 @@
 				5AAADFB018CA5E9F00897ABB /* WallPicturesViewController.m */,
 				5A5519961888240F00718C48 /* AppDelegate.h */,
 				5A5519971888240F00718C48 /* AppDelegate.m */,
+				1483D7DD18F559DB00A00609 /* UserProfileViewController.h */,
+				1483D7DE18F559DB00A00609 /* UserProfileViewController.m */,
+				1483D7E018F562EF00A00609 /* UserProfileViewController.xib */,
 			);
 			name = GUI;
 			sourceTree = "<group>";
@@ -2918,7 +2907,6 @@
 				74E6BF3D18DA3FDD00892FE8 /* folder-add.png in Resources */,
 				74E6C06E18DA3FDD00892FE8 /* credit-card-2.svg in Resources */,
 				74E6BF1218DA3FDD00892FE8 /* contract.png in Resources */,
-				5ADB4C2418E2F475006F07B0 /* NotificationSettingsViewController.xib in Resources */,
 				74E6C10918DA3FDE00892FE8 /* settings-3.svg in Resources */,
 				74E6C0B218DA3FDD00892FE8 /* layout-content-right-2.svg in Resources */,
 				74E6BF7018DA3FDD00892FE8 /* menu-2.png in Resources */,
@@ -3130,10 +3118,8 @@
 				74E6C0BD18DA3FDD00892FE8 /* mail-4.svg in Resources */,
 				74E6C0D818DA3FDE00892FE8 /* out.svg in Resources */,
 				74E6C0B418DA3FDD00892FE8 /* layout-sidebar-left.svg in Resources */,
-				5ADB4C1F18E2F462006F07B0 /* PrivacySettingsViewController.xib in Resources */,
 				74E6C0E718DA3FDE00892FE8 /* paragraph-right.svg in Resources */,
 				74E6BEF218DA3FDD00892FE8 /* browser-windows.png in Resources */,
-				5ADB4C1A18E2F448006F07B0 /* AccountSettingsViewController.xib in Resources */,
 				74E6BF4318DA3FDD00892FE8 /* fork.png in Resources */,
 				74E6BF3818DA3FDD00892FE8 /* flask-full.png in Resources */,
 				74E6C0B118DA3FDD00892FE8 /* layout-content-left.svg in Resources */,
@@ -3309,6 +3295,7 @@
 				74E6BF8C18DA3FDD00892FE8 /* paragraph-left.png in Resources */,
 				74E6BFFA18DA3FDD00892FE8 /* vinyl.png in Resources */,
 				74E6BF4A18DA3FDD00892FE8 /* home-2.png in Resources */,
+				1483D7E118F562EF00A00609 /* UserProfileViewController.xib in Resources */,
 				74E6C11918DA3FDE00892FE8 /* speech-bubble-right-3.svg in Resources */,
 				74E6BEC018DA3FDD00892FE8 /* arrow-down.png in Resources */,
 				74E6BF2E18DA3FDD00892FE8 /* exclude.png in Resources */,
@@ -3452,17 +3439,17 @@
 				5A5519F018882C3F00718C48 /* ApprovedFriendNotification.m in Sources */,
 				5AA5AC9318C51F7000FAF513 /* PlaceAnnotation.m in Sources */,
 				5AB3F0DD18D217C700B78B07 /* ARCoordinate.m in Sources */,
-				5ADB4C2318E2F475006F07B0 /* NotificationSettingsViewController.m in Sources */,
 				5AB3F0DF18D217C700B78B07 /* ARKit.m in Sources */,
 				5A5519DE18882B8400718C48 /* Photo.m in Sources */,
 				5A5519EA18882C0100718C48 /* CommentNotification.m in Sources */,
+				1483D7DC18F5556200A00609 /* ParseInfo.m in Sources */,
 				5A5519DB18882B7B00718C48 /* Fire.m in Sources */,
 				5A5519C3188829FF00718C48 /* User.m in Sources */,
-				5ADB4C1918E2F448006F07B0 /* AccountSettingsViewController.m in Sources */,
 				5A5519D518882B4000718C48 /* Like.m in Sources */,
 				5AB3F0E018D217C700B78B07 /* AugmentedRealityController.m in Sources */,
 				5AA5AC8C18C4FEEB00FAF513 /* CameraViewController.m in Sources */,
 				5A5519981888240F00718C48 /* AppDelegate.m in Sources */,
+				1483D7DF18F559DB00A00609 /* UserProfileViewController.m in Sources */,
 				5A5519D218882B3100718C48 /* Video.m in Sources */,
 				7424137918C9F0430074C5A6 /* InitialViewController.m in Sources */,
 				5A5519CC18882AD400718C48 /* Member.m in Sources */,
@@ -3477,7 +3464,6 @@
 				74E6C17218DB79FE00892FE8 /* SettingsViewController.m in Sources */,
 				5A5519C618882A4600718C48 /* Admin.m in Sources */,
 				5AB3F0DE18D217C700B78B07 /* ARGeoCoordinate.m in Sources */,
-				5ADB4C1E18E2F462006F07B0 /* PrivacySettingsViewController.m in Sources */,
 				5ADB4C2718E2FB41006F07B0 /* ProfileViewController.m in Sources */,
 				5A5519C918882A7F00718C48 /* Owner.m in Sources */,
 				5A2E085218C6691400CC9822 /* RegisterViewController.m in Sources */,
@@ -3617,9 +3603,12 @@
 					"$(inherited)",
 					/Users/berkin/Desktop/XCode/onFire,
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"/Volumes/FreeAgent\\ GoFlex\\ Drive",
+					/Volumes/FreeAgent,
+					GoFlex,
+					Drive,
 					/Users/bahaulug/onFireApp,
 					/Users/ekremoyun/Desktop/github/onFireApp,
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "onFire/onFire-Prefix.pch";
@@ -3646,9 +3635,12 @@
 					"$(inherited)",
 					/Users/berkin/Desktop/XCode/onFire,
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"/Volumes/FreeAgent\\ GoFlex\\ Drive",
+					/Volumes/FreeAgent,
+					GoFlex,
+					Drive,
 					/Users/bahaulug/onFireApp,
 					/Users/ekremoyun/Desktop/github/onFireApp,
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "onFire/onFire-Prefix.pch";

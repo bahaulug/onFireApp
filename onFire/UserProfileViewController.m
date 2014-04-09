@@ -1,20 +1,21 @@
 //
-//  ProfileViewController.m
+//  UserProfileViewController.m
 //  onFire
 //
-//  Created by Berkin Sansal on 26.03.2014.
+//  Created by Berkin Sansal on 09/04/14.
 //  Copyright (c) 2014 Berkin Sansal. All rights reserved.
 //
 
-#import "ProfileViewController.h"
 #import "UserProfileViewController.h"
 #import <Parse/Parse.h>
 
-@interface ProfileViewController ()
+@interface UserProfileViewController ()
 
 @end
 
-@implementation ProfileViewController
+@implementation UserProfileViewController
+
+@synthesize currentUsername;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -28,8 +29,13 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
-    PFUser *user = [PFUser currentUser];
+    // Do any additional setup after loading the view.
+    
+    [[self navigationController] setNavigationBarHidden:NO animated:YES];
+    
+    PFQuery *query = [PFUser query];
+    [query whereKey:@"username" equalTo:currentUsername];
+    PFUser *user = (PFUser *)[query getFirstObject];
     
     _name.text = [NSString stringWithFormat:@"%@ %@", [user objectForKey:@"firstName"], [user objectForKey:@"lastName"]];
     PFFile *imageFile = [user objectForKey:@"profilePicture"];
@@ -43,44 +49,7 @@
                           action:@selector(changeSegmented:)
                 forControlEvents:UIControlEventValueChanged];
     
-    [[self navigationController] setNavigationBarHidden:YES animated:YES];
-    
-    
     _friends = [user objectForKey:@"friends"];
-    /*
-     for (int i = 0; i<_friends.count-1; i++) {
-     PFQuery *query = [PFUser query];
-     [query whereKey:@"username" equalTo:_friends[i]];
-     PFUser *user2 = (PFUser *)[query getFirstObject];
-     for (int j = i+1; j<_friends.count; j++) {
-     PFQuery *query = [PFUser query];
-     [query whereKey:@"username" equalTo:_friends[j]];
-     PFUser *user3 = (PFUser *)[query getFirstObject];
-     PFObject *a = [PFObject objectWithClassName:@"Friendship"];
-     [a setObject:user2 forKey:@"from"];
-     [a setObject:user3 forKey:@"to"];
-     [a setObject:@"1" forKey:@"status"];
-     
-     [a saveInBackground];
-     }
-     }
-     */
-    
-    /*
-     PFQuery *query = [PFQuery queryWithClassName:@"a"];
-     [query whereKey:@"username" equalTo:aa.username];
-     [query getFirstObjectInBackgroundWithBlock:^(PFObject * ab, NSError *error) {
-     if (!error) {
-     [ab addObject:user.username forKey:@"aaa"];
-     [ab addObject:user forKey:@"aaaa"];
-     
-     [ab saveInBackground];
-     } else {
-     // Did not find any UserStats for the current user
-     NSLog(@"Error: %@", error);
-     }
-     }];
-     */
 }
 
 - (void)didReceiveMemoryWarning
@@ -88,6 +57,21 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+-(void)setUsername:(NSString *)username {
+    currentUsername = username;
+}
+
+/*
+#pragma mark - Navigation
+
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
+}
+*/
 
 -(void) changeSegmented:(id)sender{
     [_tableView reloadData];
@@ -179,6 +163,5 @@
  return YES;
  }
  */
-
 
 @end

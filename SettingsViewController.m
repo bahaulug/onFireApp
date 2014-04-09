@@ -8,9 +8,11 @@
 
 #import "SettingsViewController.h"
 #import "Setting.h"
+/*
 #import "AccountSettingsViewController.h"
 #import "PrivacySettingsViewController.h"
 #import "NotificationSettingsViewController.h"
+ */
 
 @interface SettingsViewController ()
 
@@ -87,6 +89,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    /*
     if (indexPath.row == 0)
     {
         AccountSettingsViewController *ASVC = [[AccountSettingsViewController alloc] init];
@@ -102,6 +105,7 @@
         NotificationSettingsViewController *NSVC = [[NotificationSettingsViewController alloc] init];
         [[self navigationController] pushViewController:NSVC animated:YES];
     }
+     */
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
