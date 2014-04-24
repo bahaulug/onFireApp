@@ -762,6 +762,7 @@
 		74E6C17218DB79FE00892FE8 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74E6C17118DB79FE00892FE8 /* SettingsViewController.m */; };
 		74E6C17518DB7AB900892FE8 /* Setting.m in Sources */ = {isa = PBXBuildFile; fileRef = 74E6C17418DB7AB900892FE8 /* Setting.m */; };
 		7F0CF95E18E1D49100D3F3F4 /* RecordVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F0CF95D18E1D49100D3F3F4 /* RecordVideoViewController.m */; };
+		7F514EF518FB11D6009DBC58 /* MyFiresViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F514EF418FB11D6009DBC58 /* MyFiresViewController.m */; };
 		7F76431118E1D7270060018E /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F76431018E1D7270060018E /* AssetsLibrary.framework */; };
 		7F76431318E1D7340060018E /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F76431218E1D7340060018E /* CoreMedia.framework */; };
 		7F76431518E1D73D0060018E /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F76431418E1D73D0060018E /* MediaPlayer.framework */; };
@@ -1575,6 +1576,8 @@
 		74E6C17418DB7AB900892FE8 /* Setting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Setting.m; sourceTree = "<group>"; };
 		7F0CF95C18E1D49100D3F3F4 /* RecordVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecordVideoViewController.h; sourceTree = "<group>"; };
 		7F0CF95D18E1D49100D3F3F4 /* RecordVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordVideoViewController.m; sourceTree = "<group>"; };
+		7F514EF318FB11D6009DBC58 /* MyFiresViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyFiresViewController.h; sourceTree = "<group>"; };
+		7F514EF418FB11D6009DBC58 /* MyFiresViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyFiresViewController.m; sourceTree = "<group>"; };
 		7F76431018E1D7270060018E /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		7F76431218E1D7340060018E /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		7F76431418E1D73D0060018E /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
@@ -1752,6 +1755,8 @@
 				7424137818C9F0430074C5A6 /* InitialViewController.m */,
 				7F0CF95C18E1D49100D3F3F4 /* RecordVideoViewController.h */,
 				7F0CF95D18E1D49100D3F3F4 /* RecordVideoViewController.m */,
+				7F514EF318FB11D6009DBC58 /* MyFiresViewController.h */,
+				7F514EF418FB11D6009DBC58 /* MyFiresViewController.m */,
 			);
 			name = GUI;
 			sourceTree = "<group>";
@@ -3373,6 +3378,7 @@
 				5AB3F0DF18D217C700B78B07 /* ARKit.m in Sources */,
 				5A5519DE18882B8400718C48 /* Photo.m in Sources */,
 				5A5519EA18882C0100718C48 /* CommentNotification.m in Sources */,
+				7F514EF518FB11D6009DBC58 /* MyFiresViewController.m in Sources */,
 				5A5519DB18882B7B00718C48 /* Fire.m in Sources */,
 				5A5519C3188829FF00718C48 /* User.m in Sources */,
 				5A5519D518882B4000718C48 /* Like.m in Sources */,

@@ -439,13 +439,23 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tg5-KE-NRg">
-                                <rect key="frame" x="137" y="227" width="43" height="30"/>
+                                <rect key="frame" x="139" y="185" width="43" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Fire In">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <segue destination="vUq-wE-Lat" kind="push" id="Cvl-Jn-geN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wtp-Jb-7eB">
+                                <rect key="frame" x="131" y="269" width="59" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="My Fires">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="aPG-Kr-MKL" kind="push" id="ySi-tw-r4m"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -457,6 +467,38 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nDK-Er-3Jx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4424" y="-879"/>
+        </scene>
+        <!--My Fires View Controller-->
+        <scene sceneID="Fsz-dp-Js7">
+            <objects>
+                <viewController id="aPG-Kr-MKL" customClass="MyFiresViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Qle-cj-yeV"/>
+                        <viewControllerLayoutGuide type="bottom" id="PAz-ak-pwZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="e6B-l4-b0K">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your Fires" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1US-nf-HTc">
+                                <rect key="frame" x="122" y="42" width="76" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tqn-Tt-Bjk">
+                                <rect key="frame" x="0.0" y="77" width="320" height="438"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="MJr-q3-HeT"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AUt-qn-Apx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4958" y="-662"/>
         </scene>
         <!--Record Video View Controller-->
         <scene sceneID="4bh-GU-zTZ">
@@ -487,7 +529,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i1G-RB-YdM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4936" y="-879"/>
+            <point key="canvasLocation" x="4960" y="-1443"/>
         </scene>
         <!--View Controller - Live-->
         <scene sceneID="1uQ-5X-bd0">

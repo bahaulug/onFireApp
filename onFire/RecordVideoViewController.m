@@ -72,14 +72,40 @@
 -(void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
     NSString *mediaType = [info objectForKey: UIImagePickerControllerMediaType];
     [self dismissModalViewControllerAnimated:NO];
-    // Handle a movie capture
-    if (CFStringCompare ((__bridge_retained CFStringRef) mediaType, kUTTypeMovie, 0) == kCFCompareEqualTo) {
+    _videoURL = [info objectForKey:UIImagePickerControllerMediaURL];
+    NSLog(@"%@", _videoURL);
+    
+    //Saving to parse
+    
+    PFObject *newVideo = [PFObject objectWithClassName:@"Video"];
+    
+    NSData * videoData = [NSData dataWithContentsOfURL:_videoURL];
+    
+    PFFile *videoFile = [PFFile fileWithName:@"video.mov" data:videoData];
+    newVideo[@"Video"] = videoFile;
+    
+    [newVideo saveInBackgroundWithBlock:^(BOOL succeeded, NSError *errorupload){
+        if(errorupload){
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Sorry:(" message:@"Your Video Could not be Uploaded" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+            [alert show];
+        }
+        else{
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"OnFire" message:@"Now Your Video is OnFire"
+                                                           delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+            [alert show];
+        }
+    }];
+    
+    
+    // Handle a movie capture for saving gallery
+    
+    /*if (CFStringCompare ((__bridge_retained CFStringRef) mediaType, kUTTypeMovie, 0) == kCFCompareEqualTo) {
         NSString *moviePath = [[info objectForKey:UIImagePickerControllerMediaURL] path];
         if (UIVideoAtPathIsCompatibleWithSavedPhotosAlbum(moviePath)) {
             UISaveVideoAtPathToSavedPhotosAlbum(moviePath, self,
                                                 @selector(video:didFinishSavingWithError:contextInfo:), nil);
         }
-    }
+    }*/
 }
 
 -(void)video:(NSString*)videoPath didFinishSavingWithError:(NSError*)error contextInfo:(void*)contextInfo {
@@ -93,4 +119,94 @@
         [alert show];
     }
 }
+
+
+/*- (void)imagePickerController:(UIImagePickerController *)picker      didFinishPickingMediaWithInfo:(NSDictionary *)info {
+    
+    NSURL *videoURL = [info objectForKey:UIImagePickerControllerMediaURL];
+    NSLog(@"%@", videoURL);
+    
+    
+    if (UIVideoAtPathIsCompatibleWithSavedPhotosAlbum (self.moviePath))
+    {
+        UISaveVideoAtPathToSavedPhotosAlbum (self.moviePath, nil, nil, nil);
+    }
+    
+    [self shouldUploadVideo];
+    [self doneButtonAction];
+}*/
+
+/*- (void)shouldUploadVideo {
+    
+    //Capturamos el NSUserdefault para grabar el evento
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSString *loadstring = [defaults objectForKey:@"Video"];
+    NSLog(@"Working at first line");
+    
+    
+    
+    NSData *videoData = [NSData dataWithContentsOfURL:self.videoURL];
+    NSLog(@"Working at second line");
+    
+    
+    PFFile *videoFile = [PFFile fileWithData:videoData];
+    NSLog(@"Working at third line");
+    
+    [self.videoFile saveInBackground];
+    NSLog(@"Working at last line");
+    
+}
+
+- (void)doneButtonAction {
+    // Make sure there was no errors creating the image files
+    if (!self.videoFile) {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Couldn't save your photo"
+                                                        message:nil
+                                                       delegate:nil
+                                              cancelButtonTitle:nil
+                                              otherButtonTitles:@"Dismiss",nil];
+        [alert show];
+        return;
+    }
+    
+    // Create a Photo object
+    PFObject *video = [PFObject objectWithClassName:kPAPPhotoClassKey];
+    [video setObject:[PFUser currentUser] forKey:kPAPPhotoUserKey];
+    [video setObject:self.videoFile forKey:@"Video"];
+    
+    // Request a background execution task to allow us to finish uploading
+    // the photo even if the app is sent to the background
+    self.photoPostBackgroundTaskId = [[UIApplication sharedApplication]   beginBackgroundTaskWithExpirationHandler:^{
+        [[UIApplication sharedApplication] endBackgroundTask:self.photoPostBackgroundTaskId];
+    }];
+    
+    // Save the Photo PFObject
+    [video saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+        if (succeeded) {
+            NSLog(@"Photo uploaded");
+            
+            // Add the photo to the local cache
+            [[PAPCache sharedCache] setAttributesForPhoto:video likers:[NSArray array] commenters:[NSArray array] likedByCurrentUser:NO];
+            
+            // Send a notification. The main timeline will refresh itself when caught
+            [[NSNotificationCenter defaultCenter] postNotificationName:PAPTabBarControllerDidFinishEditingPhotoNotification object:video];
+        } else {
+            NSLog(@"Photo failed to save: %@", error);
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Couldn't post your photo"
+                                                            message:nil
+                                                           delegate:nil
+                                                  cancelButtonTitle:nil
+                                                  otherButtonTitles:@"Dismiss",nil];
+            [alert show];
+        }
+        
+        // If we are currently in the background, suspend the app, otherwise
+        // cancel request for background processing.
+        [[UIApplication sharedApplication] endBackgroundTask:self.photoPostBackgroundTaskId];
+    }];
+    
+    // Dismiss this screen
+    [self.parentViewController dismissViewControllerAnimated:YES completion:nil];
+    
+}*/
 @end
