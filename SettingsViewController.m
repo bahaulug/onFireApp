@@ -32,6 +32,8 @@
 - (void)viewDidAppear:(BOOL)animated
 {
     [[self navigationController] setNavigationBarHidden:YES animated:YES];
+    [[UIApplication sharedApplication] setStatusBarHidden:NO
+                                            withAnimation:UIStatusBarAnimationFade];
 }
 
 - (void)viewDidLoad

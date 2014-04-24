@@ -30,11 +30,18 @@ NSString * const klongitudeKeypath = @"geometry.location.lng";
 
 @implementation MapViewController
 
+- (void)viewDidAppear:(BOOL)animated
+{
+    [[self navigationController] setNavigationBarHidden:YES animated:YES];
+    [[UIApplication sharedApplication] setStatusBarHidden:NO
+                                            withAnimation:UIStatusBarAnimationFade];
+    //[[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    [[self navigationController] setNavigationBarHidden:YES animated:YES];
     
     [self setLocationManager:[[CLLocationManager alloc] init]];
     [_locationManager setDelegate:self];

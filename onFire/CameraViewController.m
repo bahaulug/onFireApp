@@ -36,8 +36,8 @@ const int kInfoViewTag = 1001;
     }
     
     [_arController setMinimumScaleFactor:0.5];
-    [_arController setScaleViewsBasedOnDistance:YES];
-    [_arController setRotateViewsBasedOnPerspective:YES];
+    [_arController setScaleViewsBasedOnDistance:NO];
+    [_arController setRotateViewsBasedOnPerspective:NO];
     [_arController setDebugMode:NO];
 }
 
@@ -61,7 +61,7 @@ const int kInfoViewTag = 1001;
         
         [coordinate calibrateUsingOrigin:[_userLocation location]];
         
-        //more code gelcek
+        //more code here
         MarkerView *markerView = [[MarkerView alloc] initWithCoordinate: coordinate delegate: self];
         [coordinate setDisplayView:markerView];
         

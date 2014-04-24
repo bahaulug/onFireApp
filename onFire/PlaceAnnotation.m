@@ -34,4 +34,9 @@
     return [_place name];
 }
 
+- (NSString *)subtitle
+{
+    return [_place reference];
+}
+
 @end

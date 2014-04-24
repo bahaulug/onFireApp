@@ -16,5 +16,6 @@
 - (id)initWithPlace:(Place *)place;
 - (CLLocationCoordinate2D)coordinate;
 - (NSString *)title;
+- (NSString *)subtitle;
 
 @end

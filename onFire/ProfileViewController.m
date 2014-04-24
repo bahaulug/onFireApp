@@ -25,6 +25,14 @@
     return self;
 }
 
+- (void)viewDidAppear:(BOOL)animated
+{
+    [[self navigationController] setNavigationBarHidden:YES animated:YES];
+    [[UIApplication sharedApplication] setStatusBarHidden:NO
+                                            withAnimation:UIStatusBarAnimationFade];
+    //[[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -42,9 +50,7 @@
     [_segmentedControl addTarget:self
                           action:@selector(changeSegmented:)
                 forControlEvents:UIControlEventValueChanged];
-    
-    [[self navigationController] setNavigationBarHidden:YES animated:YES];
-    
+
     
     _friends = [user objectForKey:@"friends"];
     /*
