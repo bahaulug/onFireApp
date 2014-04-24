@@ -2,13 +2,16 @@
 //  PrivacySettingsViewController.m
 //  onFire
 //
-//  Created by Bengisu Şahin on 09.04.2014.
+//  Created by Bengisu Şahin on 16.04.2014.
 //  Copyright (c) 2014 Berkin Sansal. All rights reserved.
 //
 
 #import "PrivacySettingsViewController.h"
 
 @interface PrivacySettingsViewController ()
+
+@property (nonatomic) NSUInteger profile;
+@property (nonatomic) NSUInteger fire;
 
 @end
 
@@ -27,106 +30,65 @@
 {
     [super viewDidLoad];
 
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
- 
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    self.profile = 1;
+    self.fire = 2;
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-#pragma mark - Table view data source
-
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-{
-#warning Potentially incomplete method implementation.
-    // Return the number of sections.
-    return 0;
-}
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
-#warning Incomplete method implementation.
-    // Return the number of rows in the section.
-    return 0;
-}
+#pragma mark -
+#pragma mark === UITableViewDataSource ===
+#pragma mark -
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    UITableViewCell *cell = [super tableView:tableView cellForRowAtIndexPath:indexPath];
+    cell.accessoryType = UITableViewCellAccessoryNone;
     
-    // Configure the cell...
+    NSUInteger section = [indexPath section];
+    NSUInteger row = [indexPath row];
     
+    switch (section)
+    {
+        case 0:
+            if (row == self.profile)
+            {
+                cell.accessoryType = UITableViewCellAccessoryCheckmark;
+            }
+            break;
+            
+        case 1:
+            if (row == self.fire)
+            {
+                cell.accessoryType = UITableViewCellAccessoryCheckmark;
+            }
+            break;
+    }
     return cell;
 }
-/*
+
+#pragma mark -
+#pragma mark === UITableViewDelegate ===
+#pragma mark -
+
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    if (indexPath == nil) {
-        [tableView cellForRowAtIndexPath:indexPath].accessoryType = UITableViewCellAccessoryNone;    }
+    NSUInteger section = [indexPath section];
+    NSUInteger row = [indexPath row];
     
-    [tableView cellForRowAtIndexPath:indexPath].accessoryType = UITableViewCellAccessoryCheckmark;
-    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    switch (section)
+    {
+        case 0:
+            self.profile = row;
+            
+            break;
+            
+        case 1:
+            self.fire = row;
+            
+            break;
+    }
     
-}*/
-
-
-
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
-
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    }   
-    else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
-{
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
-/*
-#pragma mark - Navigation
-
-// In a story board-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    [self.tableView reloadData];
 }
 
- */
 
 @end

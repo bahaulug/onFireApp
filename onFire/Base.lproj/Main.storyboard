@@ -658,10 +658,10 @@
             </objects>
             <point key="canvasLocation" x="4424" y="1241"/>
         </scene>
-        <!--View Controller - Account Settings-->
+        <!--Account Settings View Controller - Account Settings-->
         <scene sceneID="i9t-Ej-ImH">
             <objects>
-                <viewController title="Account Settings" id="27L-QA-3Nb" sceneMemberID="viewController">
+                <viewController title="Account Settings" id="27L-QA-3Nb" customClass="AccountSettingsViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="mHB-hU-3Y8"/>
                         <viewControllerLayoutGuide type="bottom" id="YK7-qU-WV3"/>
@@ -670,83 +670,74 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="p7t-Gu-4u7">
-                                <rect key="frame" x="118" y="27" width="148" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="p7t-Gu-4u7">
+                                <rect key="frame" x="118" y="77" width="148" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j6I-yL-TlD">
-                                <rect key="frame" x="26" y="31" width="46" height="21"/>
+                                <rect key="frame" x="26" y="81" width="46" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Surname" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a4i-VN-biR">
-                                <rect key="frame" x="20" y="83" width="70" height="21"/>
+                                <rect key="frame" x="20" y="133" width="70" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="About" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PFK-ii-k5h">
-                                <rect key="frame" x="26" y="138" width="47" height="21"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Birthday" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PFK-ii-k5h">
+                                <rect key="frame" x="26" y="188" width="65" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Gender" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SBR-c8-fQt">
-                                <rect key="frame" x="26" y="191" width="57" height="21"/>
+                                <rect key="frame" x="26" y="241" width="57" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xCz-Xa-vYI">
-                                <rect key="frame" x="20" y="326" width="126" height="30"/>
+                                <rect key="frame" x="20" y="314" width="126" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Change Password">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2hg-fX-3tY">
-                                <rect key="frame" x="20" y="383" width="153" height="30"/>
+                                <rect key="frame" x="20" y="362" width="153" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Change Profile Picture">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mail" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lgl-a3-qh0">
-                                <rect key="frame" x="26" y="245" width="32" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aQU-Yc-l7k">
-                                <rect key="frame" x="141" y="439" width="38" height="30"/>
+                                <rect key="frame" x="141" y="422" width="38" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="SAVE">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="savePressed:" destination="27L-QA-3Nb" eventType="touchUpInside" id="IJf-Zf-4ED"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Dzg-pd-103">
-                                <rect key="frame" x="118" y="83" width="148" height="30"/>
+                                <rect key="frame" x="118" y="133" width="148" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9dr-bF-oPG">
-                                <rect key="frame" x="118" y="138" width="148" height="30"/>
+                                <rect key="frame" x="118" y="188" width="148" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3Co-Sq-wfy">
-                                <rect key="frame" x="118" y="191" width="148" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1UC-Vr-k5Q">
-                                <rect key="frame" x="118" y="245" width="148" height="30"/>
+                                <rect key="frame" x="118" y="241" width="148" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -757,6 +748,13 @@
                     <navigationItem key="navigationItem" title="Account Settings" id="0jh-un-3gH"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="birthdayChangeTextField" destination="9dr-bF-oPG" id="PFE-ea-GWE"/>
+                        <outlet property="fNameChangeTextField" destination="p7t-Gu-4u7" id="i1c-pt-jwD"/>
+                        <outlet property="genderChangeTextField" destination="3Co-Sq-wfy" id="EiS-aO-PVW"/>
+                        <outlet property="lNameChangeTextField" destination="Dzg-pd-103" id="9mx-1k-FET"/>
+                        <outlet property="saveButton" destination="aQU-Yc-l7k" id="tFa-KP-rEm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DRR-MI-idc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -778,12 +776,12 @@
                                 <rect key="frame" x="20" y="20" width="280" height="486"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <mutableString key="text">What is onFire?
+                                <string key="text">What is onFire?
 onFire is a free app that helps you find where your friends are and helps to see what is happening in a place at a particular moment. When you're out and about, use onFire to discover new places, read comments, watch videos of places so you know what waits you when you arrive. Looking for inspiration for what to do next? We'll give you personalized recommendations based on where you, your friends, and people with similar tastes have been.
 Sign up by authorizing onFire with your Facebook account, or choose ‘sign up with email.’ Be sure to enter a valid email address that you can access as well as your correct Date of Birth.
 
 When was onFire founded?
-onFire co-founders Bengisu Şahin, Sıla Şirin, Berkin Şansal, Barış Şahin and Baha Uluğ met in 2008 while studying in the same university in Ankara, Turkey. For the senior project, they began building the first version of onFire in fall 2013.</mutableString>
+onFire co-founders Bengisu Şahin, Sıla Şirin, Berkin Şansal, Barış Şahin and Baha Uluğ met in 2008 while studying in the same university in Ankara, Turkey. For the senior project, they began building the first version of onFire in fall 2013.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -812,7 +810,7 @@ onFire co-founders Bengisu Şahin, Sıla Şirin, Berkin Şansal, Barış Şahin 
                                 <rect key="frame" x="20" y="20" width="280" height="481"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <mutableString key="text">Last Updated: April 09, 2014
+                                <string key="text">Last Updated: April 09, 2014
 
 PLEASE READ THESE TERMS OF USE CAREFULLY BEFORE USING THE SERVICES OFFERED BY ONFIRE.
 
@@ -835,7 +833,7 @@ You understand that all information publicly posted or privately transmitted thr
 When you delete your User Submissions, they will be removed from the Service. However, you understand that any removed User Submissions may persist in backup copies for a reasonable period of time (but following removal will not be shared with others) or may remain with users who have previously accessed or downloaded your User Submissions.
 
 Rules and Conduct
-As a condition of use, you promise not to use the Service for any purpose that is prohibited by these Terms of Use. You are responsible for all of your activity in connection with the Service. Additionally, you shall abide by all applicable local, state, national and international laws and regulations and, if you represent a business, any advertising, marketing, privacy, or other self-regulatory code(s) applicable to your industry.</mutableString>
+As a condition of use, you promise not to use the Service for any purpose that is prohibited by these Terms of Use. You are responsible for all of your activity in connection with the Service. Additionally, you shall abide by all applicable local, state, national and international laws and regulations and, if you represent a business, any advertising, marketing, privacy, or other self-regulatory code(s) applicable to your industry.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -848,10 +846,10 @@ As a condition of use, you promise not to use the Service for any purpose that i
             </objects>
             <point key="canvasLocation" x="3088" y="2798"/>
         </scene>
-        <!--Table View Controller - Privacy Settings-->
+        <!--Privacy Settings View Controller - Privacy Settings-->
         <scene sceneID="W34-P1-hjo">
             <objects>
-                <tableViewController title="Privacy Settings" id="oUC-Fr-n28" sceneMemberID="viewController">
+                <tableViewController title="Privacy Settings" id="oUC-Fr-n28" customClass="PrivacySettingsViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="UBb-yu-cuG">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -859,15 +857,15 @@ As a condition of use, you promise not to use the Service for any purpose that i
                         <sections>
                             <tableViewSection headerTitle="Profile" id="LS6-BZ-4Ir">
                                 <cells>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="sen-H7-7dF" style="IBUITableViewCellStyleDefault" id="glA-hs-7ZX">
-                                        <rect key="frame" x="0.0" y="55" width="320" height="44"/>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="checkmark" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="sen-H7-7dF" style="IBUITableViewCellStyleDefault" id="glA-hs-7ZX">
+                                        <rect key="frame" x="0.0" y="119" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="glA-hs-7ZX" id="B3P-IF-LXB">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="281" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Private" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="sen-H7-7dF">
-                                                    <rect key="frame" x="15" y="0.0" width="290" height="43"/>
+                                                    <rect key="frame" x="15" y="0.0" width="266" height="43"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -876,8 +874,8 @@ As a condition of use, you promise not to use the Service for any purpose that i
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="Oyr-Xm-RvJ" style="IBUITableViewCellStyleDefault" id="D3L-xv-DoP">
-                                        <rect key="frame" x="0.0" y="99" width="320" height="44"/>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="Oyr-Xm-RvJ" style="IBUITableViewCellStyleDefault" id="D3L-xv-DoP">
+                                        <rect key="frame" x="0.0" y="163" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="D3L-xv-DoP" id="ZPZ-un-Jhj">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
@@ -893,8 +891,8 @@ As a condition of use, you promise not to use the Service for any purpose that i
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="Ucn-9f-fHt" style="IBUITableViewCellStyleDefault" id="OUg-Pl-KMG">
-                                        <rect key="frame" x="0.0" y="143" width="320" height="44"/>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="Ucn-9f-fHt" style="IBUITableViewCellStyleDefault" id="OUg-Pl-KMG">
+                                        <rect key="frame" x="0.0" y="207" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="OUg-Pl-KMG" id="ovR-3X-aLX">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
@@ -914,8 +912,8 @@ As a condition of use, you promise not to use the Service for any purpose that i
                             </tableViewSection>
                             <tableViewSection headerTitle="Fire" id="AUm-0J-9uq">
                                 <cells>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="WeN-mh-amp" style="IBUITableViewCellStyleDefault" id="bnw-hY-aYj">
-                                        <rect key="frame" x="0.0" y="235" width="320" height="44"/>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell2" textLabel="WeN-mh-amp" style="IBUITableViewCellStyleDefault" id="bnw-hY-aYj">
+                                        <rect key="frame" x="0.0" y="299" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bnw-hY-aYj" id="t94-Pd-bmi">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
@@ -931,8 +929,8 @@ As a condition of use, you promise not to use the Service for any purpose that i
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="jEG-hE-KvQ" style="IBUITableViewCellStyleDefault" id="IdT-2Z-9Zr">
-                                        <rect key="frame" x="0.0" y="279" width="320" height="44"/>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell2" textLabel="jEG-hE-KvQ" style="IBUITableViewCellStyleDefault" id="IdT-2Z-9Zr">
+                                        <rect key="frame" x="0.0" y="343" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="IdT-2Z-9Zr" id="yvc-af-CII">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
@@ -948,8 +946,8 @@ As a condition of use, you promise not to use the Service for any purpose that i
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="ATh-Lr-30a" style="IBUITableViewCellStyleDefault" id="Fdf-YN-AEB">
-                                        <rect key="frame" x="0.0" y="323" width="320" height="44"/>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell2" textLabel="ATh-Lr-30a" style="IBUITableViewCellStyleDefault" id="Fdf-YN-AEB">
+                                        <rect key="frame" x="0.0" y="387" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Fdf-YN-AEB" id="zcg-hN-Vlp">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
@@ -979,10 +977,10 @@ As a condition of use, you promise not to use the Service for any purpose that i
             </objects>
             <point key="canvasLocation" x="3621" y="2580"/>
         </scene>
-        <!--Table View Controller - Notification Settings-->
+        <!--Notification Settings View Controller - Notification Settings-->
         <scene sceneID="LW0-WC-0kd">
             <objects>
-                <tableViewController title="Notification Settings" id="GWm-dD-sy2" sceneMemberID="viewController">
+                <tableViewController title="Notification Settings" id="GWm-dD-sy2" customClass="NotificationSettingsViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="O7I-io-ts6">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -991,7 +989,7 @@ As a condition of use, you promise not to use the Service for any purpose that i
                             <tableViewSection headerTitle="Notification settings" id="KTZ-dt-CTj">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="zlo-Fx-kCx">
-                                        <rect key="frame" x="0.0" y="55" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="119" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zlo-Fx-kCx" id="Ht5-9g-8mV">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
@@ -1006,12 +1004,15 @@ As a condition of use, you promise not to use the Service for any purpose that i
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="B9U-FC-ks4">
                                                     <rect key="frame" x="251" y="6" width="51" height="31"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <connections>
+                                                        <action selector="likelikeSwitchValueChanged:" destination="GWm-dD-sy2" eventType="valueChanged" id="Mrc-mw-IKV"/>
+                                                    </connections>
                                                 </switch>
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="ill-en-R9H">
-                                        <rect key="frame" x="0.0" y="99" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="163" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ill-en-R9H" id="mQS-rP-loX">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
@@ -1027,12 +1028,15 @@ As a condition of use, you promise not to use the Service for any purpose that i
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zSM-Ag-r1L">
                                                     <rect key="frame" x="251" y="6" width="51" height="31"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <connections>
+                                                        <action selector="commentSwitchValueChanged:" destination="GWm-dD-sy2" eventType="valueChanged" id="UOa-Is-rz4"/>
+                                                    </connections>
                                                 </switch>
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="saN-rE-xAb">
-                                        <rect key="frame" x="0.0" y="143" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="207" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="saN-rE-xAb" id="BCt-7s-fLK">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
@@ -1048,6 +1052,9 @@ As a condition of use, you promise not to use the Service for any purpose that i
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="N66-dg-eB1">
                                                     <rect key="frame" x="251" y="6" width="51" height="31"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <connections>
+                                                        <action selector="requestswitchValueChanged:" destination="GWm-dD-sy2" eventType="valueChanged" id="LEC-6f-CTX"/>
+                                                    </connections>
                                                 </switch>
                                             </subviews>
                                         </tableViewCellContentView>
@@ -1061,6 +1068,11 @@ As a condition of use, you promise not to use the Service for any purpose that i
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="G6J-nc-oTI"/>
+                    <connections>
+                        <outlet property="commentSwitch" destination="zSM-Ag-r1L" id="bgB-Z9-xKF"/>
+                        <outlet property="likeSwitch" destination="B9U-FC-ks4" id="vN0-AI-4af"/>
+                        <outlet property="requestSwitch" destination="N66-dg-eB1" id="ppK-aq-Qig"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fix-e5-diu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1082,7 +1094,7 @@ As a condition of use, you promise not to use the Service for any purpose that i
                                 <rect key="frame" x="20" y="20" width="280" height="473"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <mutableString key="text">ACCOUNT
+                                <string key="text">ACCOUNT
 
 How can I change my username?
 Go to 'Settings' and from there account settings and there you can change your informations.
@@ -1092,7 +1104,7 @@ To add add a profile photo, visit settings and click "Choose File" next to "Prof
 Be sure to click "Save Changes" after you upload the photo.
 
 Notification Settings
-On your mobile device, navigate to Settings > Notifications. From here, you be able to edit  you receive notifications or not.</mutableString>
+On your mobile device, navigate to Settings > Notifications. From here, you be able to edit  you receive notifications or not.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -1121,7 +1133,7 @@ On your mobile device, navigate to Settings > Notifications. From here, you be a
                                 <rect key="frame" x="20" y="20" width="280" height="501"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <mutableString key="text">BASICS
+                                <string key="text">BASICS
 
 What is onFire?
 onFire is a free app that helps you find where your friends are and helps to see what is happening in a place at a particular moment. When you're out and about, use onFire to discover new places, read comments, watch videos of places so you know what waits you when you arrive. Looking for inspiration for what to do next? We'll give you personalized recommendations based on where you, your friends, and people with similar tastes have been.
@@ -1151,7 +1163,7 @@ Removing friends
 In the app, in your page go to friends page and tap to a friend that u want to remove in this page tap ‘ remove from friends.’ This will remove the person from your friends list and cause the button to toggle back to ‘add friend.’
 
 Friend request notifications
-You can opt to receive emails when you get a friend request. You can update this under   ‘Settings’ in the app, from the individual profile pages.</mutableString>
+You can opt to receive emails when you get a friend request. You can update this under   ‘Settings’ in the app, from the individual profile pages.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -1180,7 +1192,29 @@ You can opt to receive emails when you get a friend request. You can update this
                                 <rect key="frame" x="20" y="20" width="280" height="484"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <mutableString key="text">PRIVACY POLICIESThere are many different ways you can use our services – to search for and share information, to communicate with other people or to create new content. When you share information with us, for example by creating a onFire Account, we can make those services even better – to show you more relevant search results , to help you connect with people or to make sharing with others quicker and easier. As you use our services, we want you to be clear how we’re using information and the ways in which you can protect your privacy.Our Privacy Policy explains:What information we collect and why we collect it.How we use that information.The choices we offer, including how to access and update information.We’ve tried to keep it as simple as possible. Your privacy matters to fire up so whether you are new to fire up or a long-time user, please do take the time to get to know our practices – and if you have any questions consult this page.Information we collectWe collect information to provide better services to all of our users – from figuring out basic stuff like which places you like, to more complex things like which places you’ll find most useful or the people who matter most to you online.We collect information in two ways:Information you give us. For example, many of our services require you to sign up for a Facebook Account. When you do, we’ll ask for personal information, like your name, email address or telephone number. If you want to take full advantage of the sharing features we offer, we might also ask you to create a publicly visible onFire account which may include your name and photo.Information we get from your use of our services. We may collect information about the services that you use and how you use them. This information includes:Device information We may collect device-specific information (such as your hardware model, operating system version, unique device identifiers, and mobile network information including phone number). Google may associate your device identifiers or phone number with your Google Account.Log information When you use Facebook or view content provided by onFire, we may automatically collect and store certain information inserver logs. This may include:details of how you used our service, such as your search queries.telephony log information like your phone number and your friends in your phone list.Internet protocol address.device event information such as crashes, system activity, hardware settings, the date and time of your request.Location information When you use a location-enabled onFire service, we may collect and process information about your actual location, like GPS signals sent by a mobile device. We may also use various technologies to determine location, such as sensor data from your device that may, for example, provide information on nearby Wi-Fi access points and cell towers.Unique application numbers Certain services include a unique application number. This number and information about your installation (for example, the operating system type and application version number) may be sent to obFire when you download or delete that service or when that service periodically contacts our servers, such as for automatic updates.Local storage We may collect and store information (including personal information) locally on your device using mechanisms such as application data caches.</mutableString>
+                                <string key="text">PRIVACY POLICIES
+There are many different ways you can use our services – to search for and share information, to communicate with other people or to create new content. 
+When you share information with us, for example by creating a onFire Account, we can make those services even better – to show you more relevant search results , to help you connect with people or to make sharing with others quicker and easier. As you use our services, we want you to be clear how we’re using information and the ways in which you can protect your privacy.
+Our Privacy Policy explains:
+What information we collect and why we collect it.
+How we use that information.
+The choices we offer, including how to access and update information.
+We’ve tried to keep it as simple as possible. Your privacy matters to fire up so whether you are new to fire up or a long-time user, please do take the time to get to know our practices – and if you have any questions consult this page.
+Information we collect
+We collect information to provide better services to all of our users – from figuring out basic stuff like which places you like, to more complex things like which places you’ll find most useful or the people who matter most to you online.
+We collect information in two ways:
+Information you give us. For example, many of our services require you to sign up for a Facebook Account. When you do, we’ll ask for personal information, like your name, email address or telephone number. If you want to take full advantage of the sharing features we offer, we might also ask you to create a publicly visible onFire account which may include your name and photo.
+Information we get from your use of our services. We may collect information about the services that you use and how you use them. This information includes:
+Device information We may collect device-specific information (such as your hardware model, operating system version, unique device identifiers, and mobile network information including phone number). Google may associate your device identifiers or phone number with your Google Account.
+Log information When you use Facebook or view content provided by onFire, we may automatically collect and store certain information inserver logs. This may include:
+details of how you used our service, such as your search queries.
+telephony log information like your phone number and your friends in your phone list.
+Internet protocol address.
+device event information such as crashes, system activity, hardware settings, the date and time of your request.
+Location information When you use a location-enabled onFire service, we may collect and process information about your actual location, like GPS signals sent by a mobile device. We may also use various technologies to determine location, such as sensor data from your device that may, for example, provide information on nearby Wi-Fi access points and cell towers.
+Unique application numbers Certain services include a unique application number. This number and information about your installation (for example, the operating system type and application version number) may be sent to obFire when you download or delete that service or when that service periodically contacts our servers, such as for automatic updates.
+Local storage We may collect and store information (including personal information) locally on your device using mechanisms such as application data caches.
+</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -1205,7 +1239,7 @@ You can opt to receive emails when you get a friend request. You can update this
                             <tableViewSection headerTitle="Help" id="uEv-Sq-DBT">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="i5J-Wo-QYL" style="IBUITableViewCellStyleDefault" id="ZJB-jk-mBh">
-                                        <rect key="frame" x="0.0" y="55" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="119" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ZJB-jk-mBh" id="0Q8-8B-eqq">
                                             <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
@@ -1225,7 +1259,7 @@ You can opt to receive emails when you get a friend request. You can update this
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="T2P-ua-Ewx" style="IBUITableViewCellStyleDefault" id="8IF-vd-1aW">
-                                        <rect key="frame" x="0.0" y="99" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="163" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8IF-vd-1aW" id="SfW-TO-FBz">
                                             <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
@@ -1268,7 +1302,7 @@ You can opt to receive emails when you get a friend request. You can update this
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="SettingCell" textLabel="BFG-UN-IzZ" style="IBUITableViewCellStyleDefault" id="ZEA-Oi-lXv">
-                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="86" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ZEA-Oi-lXv" id="wbG-Ql-Cv6">
                                     <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
@@ -1292,6 +1326,7 @@ You can opt to receive emails when you get a friend request. You can update this
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Settings" image="settings-3.png" id="073-Oo-3oe"/>
                     <navigationItem key="navigationItem" id="UmD-IQ-O4z"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <segue destination="oUC-Fr-n28" kind="push" identifier="Privacy Settings" id="B3s-Sc-ffG"/>
                         <segue destination="27L-QA-3Nb" kind="push" identifier="Account Settings" id="eUl-fw-ffL"/>

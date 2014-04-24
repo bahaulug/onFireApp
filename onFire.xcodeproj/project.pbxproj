@@ -63,7 +63,9 @@
 		5AB7FD0818C3A31C00C79354 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AB7FD0318C3A31C00C79354 /* SystemConfiguration.framework */; };
 		7424137618C9D65D0074C5A6 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7424137518C9D65D0074C5A6 /* Parse.framework */; };
 		7424137918C9F0430074C5A6 /* InitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7424137818C9F0430074C5A6 /* InitialViewController.m */; };
-		745B02DB18F5DBCA00938AAF /* PrivacySettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 745B02DA18F5DBCA00938AAF /* PrivacySettingsViewController.m */; };
+		745B02E118F80BB900938AAF /* AccountSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 745B02E018F80BB900938AAF /* AccountSettingsViewController.m */; };
+		748E2DAC18FF182F00EE894B /* PrivacySettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 748E2DAB18FF182F00EE894B /* PrivacySettingsViewController.m */; };
+		748E2DAF190823C700EE894B /* NotificationSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 748E2DAE190823C700EE894B /* NotificationSettingsViewController.m */; };
 		74E6BEB218DA3FDD00892FE8 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 74E6BBF318DA3FD400892FE8 /* .gitignore */; };
 		74E6BEB318DA3FDD00892FE8 /* License.txt in Resources */ = {isa = PBXBuildFile; fileRef = 74E6BBF418DA3FD400892FE8 /* License.txt */; };
 		74E6BEB418DA3FDD00892FE8 /* @.png in Resources */ = {isa = PBXBuildFile; fileRef = 74E6BBF718DA3FD400892FE8 /* @.png */; };
@@ -870,8 +872,12 @@
 		7424137518C9D65D0074C5A6 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		7424137718C9F0430074C5A6 /* InitialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InitialViewController.h; sourceTree = "<group>"; };
 		7424137818C9F0430074C5A6 /* InitialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InitialViewController.m; sourceTree = "<group>"; };
-		745B02D918F5DBCA00938AAF /* PrivacySettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrivacySettingsViewController.h; sourceTree = "<group>"; };
-		745B02DA18F5DBCA00938AAF /* PrivacySettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrivacySettingsViewController.m; sourceTree = "<group>"; };
+		745B02DF18F80BB900938AAF /* AccountSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountSettingsViewController.h; sourceTree = "<group>"; };
+		745B02E018F80BB900938AAF /* AccountSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountSettingsViewController.m; sourceTree = "<group>"; };
+		748E2DAA18FF182F00EE894B /* PrivacySettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrivacySettingsViewController.h; sourceTree = "<group>"; };
+		748E2DAB18FF182F00EE894B /* PrivacySettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrivacySettingsViewController.m; sourceTree = "<group>"; };
+		748E2DAD190823C700EE894B /* NotificationSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationSettingsViewController.h; sourceTree = "<group>"; };
+		748E2DAE190823C700EE894B /* NotificationSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationSettingsViewController.m; sourceTree = "<group>"; };
 		74E6BBF318DA3FD400892FE8 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		74E6BBF418DA3FD400892FE8 /* License.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = License.txt; sourceTree = "<group>"; };
 		74E6BBF718DA3FD400892FE8 /* @.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "@.png"; sourceTree = "<group>"; };
@@ -1714,6 +1720,10 @@
 		5AB7FCE218C395EF00C79354 /* GUI */ = {
 			isa = PBXGroup;
 			children = (
+				748E2DAA18FF182F00EE894B /* PrivacySettingsViewController.h */,
+				748E2DAB18FF182F00EE894B /* PrivacySettingsViewController.m */,
+				745B02DF18F80BB900938AAF /* AccountSettingsViewController.h */,
+				745B02E018F80BB900938AAF /* AccountSettingsViewController.m */,
 				5AAADFB318CA5FD600897ABB /* Constants.h */,
 				5AAADFAD18CA5E9F00897ABB /* UploadImageViewController.h */,
 				5AAADFAE18CA5E9F00897ABB /* UploadImageViewController.m */,
@@ -1722,8 +1732,8 @@
 				5A5519961888240F00718C48 /* AppDelegate.h */,
 				5A5519971888240F00718C48 /* AppDelegate.m */,
 				5A5519991888240F00718C48 /* Main.storyboard */,
-				745B02D918F5DBCA00938AAF /* PrivacySettingsViewController.h */,
-				745B02DA18F5DBCA00938AAF /* PrivacySettingsViewController.m */,
+				748E2DAD190823C700EE894B /* NotificationSettingsViewController.h */,
+				748E2DAE190823C700EE894B /* NotificationSettingsViewController.m */,
 				74E6C17018DB79FE00892FE8 /* SettingsViewController.h */,
 				74E6C17118DB79FE00892FE8 /* SettingsViewController.m */,
 				74E6C17318DB7AB900892FE8 /* Setting.h */,
@@ -3358,12 +3368,14 @@
 				5A5519F018882C3F00718C48 /* ApprovedFriendNotification.m in Sources */,
 				5AA5AC9318C51F7000FAF513 /* PlaceAnnotation.m in Sources */,
 				5AB3F0DD18D217C700B78B07 /* ARCoordinate.m in Sources */,
+				748E2DAF190823C700EE894B /* NotificationSettingsViewController.m in Sources */,
 				5AB3F0DF18D217C700B78B07 /* ARKit.m in Sources */,
 				5A5519DE18882B8400718C48 /* Photo.m in Sources */,
 				5A5519EA18882C0100718C48 /* CommentNotification.m in Sources */,
 				5A5519DB18882B7B00718C48 /* Fire.m in Sources */,
 				5A5519C3188829FF00718C48 /* User.m in Sources */,
 				5A5519D518882B4000718C48 /* Like.m in Sources */,
+				745B02E118F80BB900938AAF /* AccountSettingsViewController.m in Sources */,
 				5AB3F0E018D217C700B78B07 /* AugmentedRealityController.m in Sources */,
 				5AA5AC8C18C4FEEB00FAF513 /* FlipsideViewController.m in Sources */,
 				5A5519981888240F00718C48 /* AppDelegate.m in Sources */,
@@ -3380,12 +3392,12 @@
 				74E6C17218DB79FE00892FE8 /* SettingsViewController.m in Sources */,
 				5A5519C618882A4600718C48 /* Admin.m in Sources */,
 				5AB3F0DE18D217C700B78B07 /* ARGeoCoordinate.m in Sources */,
+				748E2DAC18FF182F00EE894B /* PrivacySettingsViewController.m in Sources */,
 				5A5519C918882A7F00718C48 /* Owner.m in Sources */,
 				5A2E085218C6691400CC9822 /* RegisterViewController.m in Sources */,
 				5AAADFB218CA5E9F00897ABB /* WallPicturesViewController.m in Sources */,
 				5A5519ED18882C2600718C48 /* RequestFriendshipNotification.m in Sources */,
 				5A5519941888240F00718C48 /* main.m in Sources */,
-				745B02DB18F5DBCA00938AAF /* PrivacySettingsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

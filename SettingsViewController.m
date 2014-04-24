@@ -35,7 +35,7 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
     //s[[self navigationController] setNavigationBarHidden:YES animated:YES];
-    
+
     _settings = [NSMutableArray arrayWithCapacity:3];
     
     Setting *setting = [[Setting alloc] init];
@@ -67,6 +67,12 @@
     [_settings addObject:setting];
     
     self.settings = _settings;
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    [self.tableView reloadData];
 }
 
 - (void)didReceiveMemoryWarning
