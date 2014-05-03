@@ -7,7 +7,7 @@
 //
 
 #import "RecordVideoViewController.h"
-
+#import "MBProgressHUD.h"
 @interface RecordVideoViewController ()
 - (IBAction)RecordAndPlay:(id)sender;
 
@@ -22,6 +22,18 @@
         // Custom initialization
     }
     return self;
+}
+
+- (void)showProgressHud:(BOOL)show{
+    static MBProgressHUD *hud = nil;
+    if(!show){
+        [hud show:NO];
+        [hud removeFromSuperview];
+        return ;
+    }
+    if(!hud)
+        hud = [[MBProgressHUD alloc] initWithView:self.view];
+    [hud show:YES];
 }
 
 - (void)viewDidLoad
@@ -77,14 +89,21 @@
     
     //Saving to parse
     
+    //Create video
     PFObject *newVideo = [PFObject objectWithClassName:@"Video"];
+    
+    //Take video as NSData
     
     NSData * videoData = [NSData dataWithContentsOfURL:_videoURL];
     
     PFFile *videoFile = [PFFile fileWithName:@"video.mov" data:videoData];
     newVideo[@"Video"] = videoFile;
+    [newVideo setObject:[PFUser currentUser] forKey:@"fromUser"];//One to Many RelationShip
     
+    
+    [self showProgressHud:YES];
     [newVideo saveInBackgroundWithBlock:^(BOOL succeeded, NSError *errorupload){
+        [self showProgressHud:NO];
         if(errorupload){
             UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Sorry:(" message:@"Your Video Could not be Uploaded" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
             [alert show];
