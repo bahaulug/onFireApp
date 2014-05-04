@@ -9,16 +9,18 @@
 #import "MyFiresViewController.h"
 #import "MyFiresVideoCell.h"
 #import <Parse/Parse.h>
+#import "UIImageView+WebCache.h"
+
 
 @interface MyFiresViewController () <UITableViewDataSource, UITableViewDelegate>
 @property (strong, nonatomic) IBOutlet UITableView *videoTableView;
 @property (nonatomic, retain) NSArray *videoPFObjects;
+@property (nonatomic, retain) NSArray *videoPFObjects2;
 @property (nonatomic, retain) MyFiresVideoCell *lastCellDisplayed;
 @property (nonatomic, retain) NSArray *usersID;
 @end
 
 @implementation MyFiresViewController
-
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -51,11 +53,40 @@
     if(!cell){
         cell = [[MyFiresVideoCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
     }
-    PFUser *user = [PFUser currentUser];
+    //Bu queryde include key ekledim yoksa pointerın içindeki data alınmıyor
+    
+    PFQuery *query = [PFQuery queryWithClassName:@"Video"];
+    [query includeKey:@"fromUser"];
+    
+    //Burada tüm video objeleri videoPfObjects2 adlı nsarraye kaydedildi
+    
+    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        self.videoPFObjects2 = objects;
+    }];
+    
+    
+    /*PFUser *user = [PFUser currentUser];
     [user valueForKey:@"firstName"];
     
     NSString *fullName = [NSString stringWithFormat:@"%@ %@",[user valueForKey:@"firstName"],  [user valueForKey:@"lastName"]];
+    cell.videoTitleLabel.text = fullName;*/
+    
+    
+    //Burda tableview hangi rowdaysa ona gelen obje alınıyor ve desc içine atılıyor
+    
+    PFObject *desc = [self.videoPFObjects2 objectAtIndex:indexPath.row];
+    
+    PFObject * videoUser = [desc objectForKey:@"fromUser"];
+    //NSLog(@"retrieved related Post Author: %@", videoUser);
+    NSString *fullName = [NSString stringWithFormat:@"%@ %@",[videoUser valueForKey:@"firstName"],  [videoUser valueForKey:@"lastName"]];
     cell.videoTitleLabel.text = fullName;
+    
+    PFFile *file = [videoUser objectForKey:@"profilePicture"];
+    [cell.userImageView setImageWithURL:[NSURL URLWithString:file.url]];
+    
+    
+    NSString *videoDescription = desc[@"VideoDescription"];
+    cell.VideoDescriptionLabel.text = videoDescription;
 
     return cell;
 }

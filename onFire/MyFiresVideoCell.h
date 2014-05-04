@@ -14,6 +14,7 @@
 @property (nonatomic, weak) IBOutlet UILabel *VideoDescriptionLabel;
 @property (nonatomic, weak) IBOutlet UIImageView *videoImageView;
 @property (nonatomic, retain) PFObject *video;
+@property (strong, nonatomic) IBOutlet UIImageView *userImageView;
 
 - (void)playVideo;
 - (void)stopVideo;

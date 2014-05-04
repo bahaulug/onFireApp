@@ -10,10 +10,10 @@
 #import "MBProgressHUD.h"
 @interface RecordVideoViewController ()
 - (IBAction)RecordAndPlay:(id)sender;
-
 @end
 
 @implementation RecordVideoViewController
+@synthesize descriptionText;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -93,12 +93,13 @@
     PFObject *newVideo = [PFObject objectWithClassName:@"Video"];
     
     //Take video as NSData
-    
+    NSString *description = [NSString stringWithFormat:@"%@", descriptionText.text];
     NSData * videoData = [NSData dataWithContentsOfURL:_videoURL];
     
     PFFile *videoFile = [PFFile fileWithName:@"video.mov" data:videoData];
     newVideo[@"Video"] = videoFile;
     [newVideo setObject:[PFUser currentUser] forKey:@"fromUser"];//One to Many RelationShip
+    newVideo[@"VideoDescription"] = description;
     
     
     [self showProgressHud:YES];

@@ -19,6 +19,7 @@
     BOOL complete;
     BOOL comment;
 }
+@property (strong, nonatomic) IBOutlet UITextField *descriptionText;
 
 -(IBAction)recordAndPlay:(id)sender;
 -(void)addVideo;

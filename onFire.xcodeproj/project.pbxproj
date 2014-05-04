@@ -786,6 +786,7 @@
 		7F76431118E1D7270060018E /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F76431018E1D7270060018E /* AssetsLibrary.framework */; };
 		7F76431318E1D7340060018E /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F76431218E1D7340060018E /* CoreMedia.framework */; };
 		7F76431518E1D73D0060018E /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F76431418E1D73D0060018E /* MediaPlayer.framework */; };
+		7F8A536D19164ABE00DD7C3C /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F8A536C19164ABE00DD7C3C /* ProfileViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -1642,6 +1643,8 @@
 		7F76431018E1D7270060018E /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		7F76431218E1D7340060018E /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		7F76431418E1D73D0060018E /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		7F8A536B19164ABE00DD7C3C /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
+		7F8A536C19164ABE00DD7C3C /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1828,6 +1831,8 @@
 				7F514EF418FB11D6009DBC58 /* MyFiresViewController.m */,
 				7F6411B2190FDE3C00006576 /* FriendsViewController.h */,
 				7F6411B3190FDE3C00006576 /* FriendsViewController.m */,
+				7F8A536B19164ABE00DD7C3C /* ProfileViewController.h */,
+				7F8A536C19164ABE00DD7C3C /* ProfileViewController.m */,
 			);
 			name = GUI;
 			sourceTree = "<group>";
@@ -3528,6 +3533,7 @@
 				5A5519D518882B4000718C48 /* Like.m in Sources */,
 				7F6411DF190FE12D00006576 /* SDWebImagePrefetcher.m in Sources */,
 				7F675DAC19113E6600372733 /* AccountSettingsViewController.m in Sources */,
+				7F8A536D19164ABE00DD7C3C /* ProfileViewController.m in Sources */,
 				5AB3F0E018D217C700B78B07 /* AugmentedRealityController.m in Sources */,
 				5AA5AC8C18C4FEEB00FAF513 /* FlipsideViewController.m in Sources */,
 				5A5519981888240F00718C48 /* AppDelegate.m in Sources */,

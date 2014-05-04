@@ -17,7 +17,7 @@
 
 
 @implementation MyFiresVideoCell
-
+@synthesize VideoDescriptionLabel;
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
@@ -65,6 +65,7 @@
 
         moviePlayer.scalingMode = MPMovieScalingModeAspectFit;
         moviePlayer.movieControlMode = MPMovieControlModeDefault;
+        moviePlayer.controlStyle = MPMovieControlStyleNone;
         //moviePlayer.backgroundColor = [UIColor blackColor];
         
         moviePlayer.view.frame = self.videoImageView.frame;
