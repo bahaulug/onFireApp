@@ -28,8 +28,8 @@
             <objects>
                 <viewController title="Initial" id="O2V-hb-6Bt" customClass="InitialViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Vx7-xu-hbf"/>
-                        <viewControllerLayoutGuide type="bottom" id="nH1-fM-jYf"/>
+                        <viewControllerLayoutGuide type="top" id="NTK-JB-vyL"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ns6-s1-p9H"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="rla-4R-p5t">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -79,8 +79,8 @@
             <objects>
                 <viewController title="Map" id="6aC-WN-8bs" customClass="MainViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="8S1-hv-Wdm"/>
-                        <viewControllerLayoutGuide type="bottom" id="Nvb-Wh-eZp"/>
+                        <viewControllerLayoutGuide type="top" id="7Ib-7R-g5i"/>
+                        <viewControllerLayoutGuide type="bottom" id="A5j-mt-eig"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="1jg-KW-VOp">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -148,8 +148,8 @@
             <objects>
                 <viewController id="Nm2-gO-vUS" customClass="FlipsideViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="c4c-gW-9mo"/>
-                        <viewControllerLayoutGuide type="bottom" id="gOK-s2-axa"/>
+                        <viewControllerLayoutGuide type="top" id="Ukg-rX-jkX"/>
+                        <viewControllerLayoutGuide type="bottom" id="JxU-fC-Dt2"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="MfF-gD-9qt">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -180,8 +180,8 @@
             <objects>
                 <viewController id="DQu-ea-aoh" customClass="LogInViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="R4p-BZ-ZnZ"/>
-                        <viewControllerLayoutGuide type="bottom" id="jXu-MY-e6r"/>
+                        <viewControllerLayoutGuide type="top" id="WxM-Rs-Kyl"/>
+                        <viewControllerLayoutGuide type="bottom" id="PUe-ri-8Xh"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="XWx-4l-Qpt">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -228,8 +228,8 @@
             <objects>
                 <viewController id="anA-cg-eDt" customClass="RegisterViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="rzu-a2-ct9"/>
-                        <viewControllerLayoutGuide type="bottom" id="hNm-SC-UfH"/>
+                        <viewControllerLayoutGuide type="top" id="nmj-Aj-VGg"/>
+                        <viewControllerLayoutGuide type="bottom" id="OCC-Jl-luA"/>
                     </layoutGuides>
                     <scrollView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" id="j5a-gb-GIw">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -321,8 +321,8 @@
             <objects>
                 <viewController id="tf5-yK-Qnd" customClass="UploadImageViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="GNv-rH-iEs"/>
-                        <viewControllerLayoutGuide type="bottom" id="Q3m-Lk-rp5"/>
+                        <viewControllerLayoutGuide type="top" id="mZU-0g-zFe"/>
+                        <viewControllerLayoutGuide type="bottom" id="1N1-ll-2wl"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="woX-xn-zUm">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -373,8 +373,8 @@
             <objects>
                 <viewController id="kHg-lM-S5m" customClass="WallPicturesViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="o1A-Ef-jUe"/>
-                        <viewControllerLayoutGuide type="bottom" id="f7F-He-D2n"/>
+                        <viewControllerLayoutGuide type="top" id="1bG-hx-eg3"/>
+                        <viewControllerLayoutGuide type="bottom" id="7Ph-Pm-vfc"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="owo-pJ-uCj">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -413,8 +413,8 @@
             <objects>
                 <viewController id="bV5-Y1-WFV" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="R6L-hj-sdr"/>
-                        <viewControllerLayoutGuide type="bottom" id="UaD-lu-XMe"/>
+                        <viewControllerLayoutGuide type="top" id="rEK-HK-m2f"/>
+                        <viewControllerLayoutGuide type="bottom" id="rqR-Bg-lXw"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="fwq-Zx-1Io">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -455,8 +455,8 @@
             <objects>
                 <viewController id="aPG-Kr-MKL" customClass="MyFiresViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="D6Q-4j-2k0"/>
-                        <viewControllerLayoutGuide type="bottom" id="syc-K4-S8k"/>
+                        <viewControllerLayoutGuide type="top" id="bN4-42-pdx"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ago-fw-Is6"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="e6B-l4-b0K">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -530,8 +530,8 @@
             <objects>
                 <viewController id="vUq-wE-Lat" customClass="RecordVideoViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="QHG-zk-63v"/>
-                        <viewControllerLayoutGuide type="bottom" id="rOn-Sm-2D2"/>
+                        <viewControllerLayoutGuide type="top" id="zCO-M1-LCp"/>
+                        <viewControllerLayoutGuide type="bottom" id="84z-Ur-C2t"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="clM-Hp-T5J">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -561,8 +561,8 @@
             <objects>
                 <viewController id="1nX-4d-Chf" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="cLW-v5-M3T"/>
-                        <viewControllerLayoutGuide type="bottom" id="6aK-yn-HUa"/>
+                        <viewControllerLayoutGuide type="top" id="ZSe-Vq-zOV"/>
+                        <viewControllerLayoutGuide type="bottom" id="aag-9i-jdD"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="ecR-jO-mOi">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -647,8 +647,8 @@
             <objects>
                 <viewController id="PaC-lD-bXZ" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="8oV-5T-hpX"/>
-                        <viewControllerLayoutGuide type="bottom" id="2vB-Ag-7Z3"/>
+                        <viewControllerLayoutGuide type="top" id="gHi-55-HZz"/>
+                        <viewControllerLayoutGuide type="bottom" id="dPw-i9-Tca"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="lKG-fX-uAi">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -682,8 +682,8 @@
             <objects>
                 <viewController title="Fires" id="euq-r8-0P3" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="qNO-SL-GEX"/>
-                        <viewControllerLayoutGuide type="bottom" id="pLA-Jh-9bz"/>
+                        <viewControllerLayoutGuide type="top" id="PmY-wk-jB0"/>
+                        <viewControllerLayoutGuide type="bottom" id="C8p-kI-JxT"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="aIB-e1-GsT">
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
@@ -702,8 +702,8 @@
             <objects>
                 <viewController id="hhS-sN-jxS" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="rCI-PF-RQ2"/>
-                        <viewControllerLayoutGuide type="bottom" id="Y6d-ys-gmf"/>
+                        <viewControllerLayoutGuide type="top" id="siA-AU-8ql"/>
+                        <viewControllerLayoutGuide type="bottom" id="OTG-63-bWn"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="ccR-Na-akZ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -773,8 +773,8 @@
             <objects>
                 <viewController title="Account Settings" id="27L-QA-3Nb" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="55J-B4-KWz"/>
-                        <viewControllerLayoutGuide type="bottom" id="Lqt-dM-odM"/>
+                        <viewControllerLayoutGuide type="top" id="upj-dE-q9E"/>
+                        <viewControllerLayoutGuide type="bottom" id="qhW-61-NNN"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="D8Q-Wb-g92" userLabel="Account Settings">
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
@@ -877,7 +877,7 @@
             <objects>
                 <tableViewController id="wno-vD-Zew" customClass="SettingsViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" sectionIndexMinimumDisplayRowCount="8" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="1Gg-Nl-okV">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -909,18 +909,19 @@
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Settings" image="settings-3.png" id="073-Oo-3oe"/>
                     <navigationItem key="navigationItem" id="UmD-IQ-O4z"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rRy-mg-Ef8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4424" y="2024"/>
+            <point key="canvasLocation" x="4424" y="2039"/>
         </scene>
         <!--View Controller - Friends-->
         <scene sceneID="4DD-AP-7Nf">
             <objects>
                 <viewController storyboardIdentifier="FriendsViewController" title="Friends" id="amO-yQ-0wk" userLabel="View Controller - Friends" customClass="FriendsViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="2jG-Td-rbs"/>
-                        <viewControllerLayoutGuide type="bottom" id="oD6-gz-2u5"/>
+                        <viewControllerLayoutGuide type="top" id="tol-lo-maM"/>
+                        <viewControllerLayoutGuide type="bottom" id="I6f-0q-7i3"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="5UB-sM-1xN">
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
@@ -980,8 +981,8 @@
             <objects>
                 <viewController title="Places" id="7BO-NI-t1Q" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="eDz-kH-h2N"/>
-                        <viewControllerLayoutGuide type="bottom" id="IQu-Pc-vnA"/>
+                        <viewControllerLayoutGuide type="top" id="3c7-Js-gew"/>
+                        <viewControllerLayoutGuide type="bottom" id="8Rn-Mp-xAt"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="L5x-vN-x0M">
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
