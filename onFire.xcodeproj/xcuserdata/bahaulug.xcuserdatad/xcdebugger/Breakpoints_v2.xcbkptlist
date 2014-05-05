@@ -25,12 +25,12 @@
                   symbolName = "-[FriendsViewController friendsTableView]"
                   moduleName = "onFire"
                   urlString = "file:///Users/bahaulug/onFireApp/onFire/FriendsViewController.m"
-                  timestampString = "420927175.153614"
+                  timestampString = "420995201.974778"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "15"
                   endingLineNumber = "15"
-                  offsetFromSymbolStart = "16">
+                  offsetFromSymbolStart = "12">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -39,12 +39,12 @@
                   symbolName = "-[FriendsViewController setFriendsTableView:]"
                   moduleName = "onFire"
                   urlString = "file:///Users/bahaulug/onFireApp/onFire/FriendsViewController.m"
-                  timestampString = "420927175.153839"
+                  timestampString = "420995201.975082"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "15"
                   endingLineNumber = "15"
-                  offsetFromSymbolStart = "28">
+                  offsetFromSymbolStart = "20">
                </Location>
             </Locations>
          </BreakpointContent>

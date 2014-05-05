@@ -21,6 +21,7 @@
 @end
 
 @implementation MyFiresViewController
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -40,7 +41,7 @@
         [self.videoTableView reloadData];
         [self playVideoInCell];
     }];
-
+    
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
@@ -87,6 +88,21 @@
     
     NSString *videoDescription = desc[@"VideoDescription"];
     cell.VideoDescriptionLabel.text = videoDescription;
+    
+    NSDate *date = desc.createdAt;
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    NSDateFormatter *formatter2 = [[NSDateFormatter alloc] init];
+    //uncomment to get the time only
+    [formatter setDateFormat:@"hh:mm a"];
+    [formatter2 setDateFormat:@"dd.MM.yyyy"];
+    
+    
+    //get the date today
+    NSString *dateToday = [formatter stringFromDate:date];
+    NSString *timeToday = [formatter2 stringFromDate:date];
+    
+    cell.dateLabel.text = dateToday;
+    cell.timeLabel.text = timeToday;
 
     return cell;
 }
